@@ -16,18 +16,18 @@ dns:
   enhanced-mode: fake-ip   # 模式：redir-host或fake-ip
   listen: 0.0.0.0:53       # DNS监听地址
   fake-ip-range: 198.18.0.1/16    # Fake-IP解析地址池
-  fake-ip-filter: ['*.lan', 'cable.auth.com', '*.msftconnecttest.com', '*.msftncsi.com', 'network-test.debian.org', 'detectportal.firefox.com', 'resolver1.opendns.com', '*.srv.nintendo.net', '*.stun.playstation.net', 'xbox.*.microsoft.com', '*.xboxlive.com', 'stun.*', 'global.turn.twilio.com', 'global.stun.twilio.com', 'localhost.*.qq.com', 'localhost.*.weixin.qq.com', '*.logon.battlenet.com.cn', '*.logon.battle.net', '*.blzstatic.cn', 'music.163.com', '*.music.163.com', '*.126.net', 'musicapi.taihe.com', 'music.taihe.com'， 'songsearch.kugou.com', 'trackercdn.kugou.com', '*.kuwo.cn', 'api-jooxtt.sanook.com', 'api.joox.com', 'joox.com', 'y.qq.com', '*.y.qq.com', 'streamoc.music.tc.qq.com', 'mobileoc.music.tc.qq.com', 'isure.stream.qqmusic.qq.com', 'dl.stream.qqmusic.qq.com', 'aqqmusic.tc.qq.com', 'amobile.music.tc.qq.com', '*.xiami.com', '*.music.migu.cn', 'music.migu.cn', 'proxy.golang.org', '*.mcdn.bilivideo.cn', '*.cmpassport.com', 'id6.me', 'open.e.189.cn', 'mdn.open.wo.cn', 'opencloud.wostore.cn', 'auth.wosms.cn'， '*.jegotrip.com.cn', '*.icitymobile.mobi', '*.pingan.com.cn', '*.cmbchina.com', 'pool.ntp.org', '*.pool.ntp.org', 'ntp.*.com', 'time.*.com', 'ntp?.*.com', 'time?.*.com', 'time.*.gov', 'time.*.edu.cn', '*.ntp.org.cn', 'PDC._msDCS.*.*', 'DC._msDCS.*.*', 'GC._msDCS.*.*']
+  fake-ip-filter: ['*.lan', 'cable.auth.com', '*.msftconnecttest.com', '*.msftncsi.com', 'network-test.debian.org', 'detectportal.firefox.com', 'resolver1.opendns.com', '*.srv.nintendo.net', '*.stun.playstation.net', 'xbox.*.microsoft.com', '*.xboxlive.com', 'stun.*', 'global.turn.twilio.com', 'global.stun.twilio.com', 'localhost.*.qq.com', 'localhost.*.weixin.qq.com', '*.logon.battlenet.com.cn', '*.logon.battle.net', '*.blzstatic.cn', 'music.163.com', '*.music.163.com', '*.126.net', 'musicapi.taihe.com', 'music.taihe.com', 'songsearch.kugou.com', 'trackercdn.kugou.com', '*.kuwo.cn', 'api-jooxtt.sanook.com', 'api.joox.com', 'joox.com', 'y.qq.com', '*.y.qq.com', 'streamoc.music.tc.qq.com', 'mobileoc.music.tc.qq.com', 'isure.stream.qqmusic.qq.com', 'dl.stream.qqmusic.qq.com', 'aqqmusic.tc.qq.com', 'amobile.music.tc.qq.com', '*.xiami.com', '*.music.migu.cn', 'music.migu.cn', 'proxy.golang.org', '*.mcdn.bilivideo.cn', '*.cmpassport.com', 'id6.me', 'open.e.189.cn', 'mdn.open.wo.cn', 'opencloud.wostore.cn', 'auth.wosms.cn', '*.jegotrip.com.cn', '*.icitymobile.mobi', '*.pingan.com.cn', '*.cmbchina.com', 'pool.ntp.org', '*.pool.ntp.org', 'ntp.*.com', 'time.*.com', 'ntp?.*.com', 'time?.*.com', 'time.*.gov', 'time.*.edu.cn', '*.ntp.org.cn', 'PDC._msDCS.*.*', 'DC._msDCS.*.*', 'GC._msDCS.*.*']
                           # fake ip 白名单列表'以下地址不会下发fakeip映射用于连接
   nameserver: [https://doh.pub/dns-query, https://dns.alidns.com/dns-query]               
                           # 默认DNS服务器，支持udp/tcp/dot/doh/doq
   
-cfw-bypass: ['localhost', '*.local', 'captive.apple.com', 'e.crashlytics.com', 'sequoia.apple.com', 'seed-sequoia.siri.apple.com', 'www.baidu.com', 'passenger.t3go.cn', 'yunbusiness.ccb.com', 'wxh.wo.cn', 'gate.lagou.com', 'www.abchina.com.cn', 'login-service.mobile-bank.psbc.com', 'mobile-bank.psbc.com', '10.0.0.0/8', '100.64.0.0/10', '127.0.0.1/32', '169.254.0.0/16', '172.16.0.0/12', '192.168.0.0/16', '192.168.122.1/32', '193.168.0.1/32', '224.0.0.0/4', '240.0.0.0/4', '255.255.255.255/32', '::1/128', 'fc00::/7'， 'fd00::/8', 'fe80::/10', 'ff00::/8', '2001::/32', '2001:db8::/32', '2002::/16', '::ffff:0:0:0:0/1', '::ffff:128:0:0:0/1' ]
+cfw-bypass: ['localhost', '*.local', 'captive.apple.com', 'e.crashlytics.com', 'sequoia.apple.com', 'seed-sequoia.siri.apple.com', 'www.baidu.com', 'passenger.t3go.cn', 'yunbusiness.ccb.com', 'wxh.wo.cn', 'gate.lagou.com', 'www.abchina.com.cn', 'login-service.mobile-bank.psbc.com', 'mobile-bank.psbc.com', '10.0.0.0/8', '100.64.0.0/10', '127.0.0.1/32', '169.254.0.0/16', '172.16.0.0/12', '192.168.0.0/16', '192.168.122.1/32', '193.168.0.1/32', '224.0.0.0/4', '240.0.0.0/4', '255.255.255.255/32', '::1/128', 'fc00::/7', 'fd00::/8', 'fe80::/10', 'ff00::/8', '2001::/32', '2001:db8::/32', '2002::/16', '::ffff:0:0:0:0/1', '::ffff:128:0:0:0/1' ]
                           # 系统代理跳过列表
  
 ###建立锚点
     
 # 策略组引用相关参数
-pr: &pr {type: select, proxies: [🚀 手动切换, 🇭🇰 香港节点, 🇺🇸 美国节点, 🇸🇬 狮城节点, 🇯🇵 日本节点,   ♻️ 自动选择, ⚠️ 故障转移, DIRECT]}
+pr: &pr {type: select, proxies: [🚀 手动切换, 🇭🇰 香港节点, 🇺🇸 美国节点, 🇸🇬 新加坡节点, 🇯🇵 日本节点,   ♻️ 自动选择, ⚠️ 故障转移, DIRECT]}
 
 # 订阅更新和延迟测试相关参数
 p: &p {type: http, interval: 86400, health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 1800}}
@@ -65,43 +65,12 @@ proxies: null
 
 proxy-groups:
 
- #分流分组
-
- - {name: 🚀 手动切换, type: select, use: [Subscribe], proxies: [🇭🇰 香港节点,  🇸🇬 狮城节点, 🇺🇸 美国节点, 🇯🇵 日本节点,  DIRECT]}
-
- - {name: 🌏 国外网站, type: select, use: [Subscribe], proxies: [🇭🇰 香港节点,  🇸🇬 狮城节点, 🇺🇸 美国节点, 🇯🇵 日本节点,  DIRECT]}
-
- - {name: 📹 国际媒体, type: select, use: [Subscribe], proxies: [🇭🇰 香港节点,  🇸🇬 狮城节点, 🇺🇸 美国节点, 🇯🇵 日本节点,  DIRECT]}
-
- - {name: 🍎 苹果服务, type: select, use: [Subscribe], proxies: [🇭🇰 香港节点, 🇺🇸 美国节点, DIRECT]}
-
- - {name: 📔 Github,type: select, use: [Subscribe], proxies: [🇭🇰 香港节点,  🇸🇬 狮城节点, 🇺🇸 美国节点, 🇯🇵 日本节点,  DIRECT]}
-
- - {name: 🍿 Netflix, type: select, use: [Subscribe], proxies: [🇭🇰 香港节点, 🇺🇸 美国节点, 🇸🇬 狮城节点, 🇯🇵 日本节点, 🇹🇷 土耳其节点, DIRECT]}
-
- - {name: 🎵 Youtube, type: select, use: [Subscribe], proxies: [🇭🇰 香港节点, 🇺🇸 美国节点, 🇸🇬 狮城节点, 🇯🇵 日本节点, 🇰🇷 韩国节点, DIRECT]}
-
- - {name: 📟 电报消息, type: select, use: [Subscribe], proxies: [🇭🇰 香港节点,  🇸🇬 狮城节点, 🇺🇸 美国节点, 🇯🇵 日本节点,  DIRECT]}
-
- - {name: 🐦 推特消息, type: select, use: [Subscribe], proxies: [🇭🇰 香港节点,  🇸🇬 狮城节点, 🇺🇸 美国节点, 🇯🇵 日本节点,  DIRECT]}
- 
- - {name: 🤖 OpenAI, type: select, use: [Subscribe], proxies: [🇺🇸 美国节点, DIRECT]}
-
- - {name: 🌌 谷歌服务, type: select, use: [Subscribe], proxies: [🇭🇰 香港节点,  🇸🇬 狮城节点, 🇺🇸 美国节点,🇯🇵 日本节点,  DIRECT]}
-
- - {name: 🎮 游戏平台, type: select, use: [Subscribe], proxies: [🇭🇰 香港节点,  🇸🇬 狮城节点, 🇺🇸 美国节点,🇯🇵 日本节点,  DIRECT]}
-  
- - {name: 📺 哔哩哔哩, type: select, proxies: [DIRECT, 🇭🇰 香港节点, 🇨🇳 台湾节点]}
-
- - {name: 🌏 国内网站, type: select, proxies: [DIRECT, 🚀 手动切换]}
-  
- - {name: 🛑 AdBlock, type: select, proxies: [REJECT, DIRECT]}
-  
- - {name: 🐟 漏网之鱼, type: select, use: [Subscribe], proxies: [🇭🇰 香港节点,  🇸🇬 狮城节点, 🇺🇸 美国节点,🇯🇵 日本节点,  DIRECT]}
  #节点地区分组
- 
+
  - {name: 🇭🇰 香港节点, <<: *select, filter: "^(?=.*((?i)🇭🇰|香港|(\b(HK|Hong)\b)))(?!.*((?i)回国|校园|游戏|IEPL|(\b(GAME)\b))).*$"}
 
+ - {name: 🇨🇳 台湾节点, <<: *select, filter: "(?i)🇹🇼|台湾|(\b(TW|Tai|Taiwan)\b)"}
+ 
  - {name: 🇸🇬 新加坡节点, <<: *select, filter: "^(?=.*((?i)🇸🇬|新加坡|狮|(\b(SG|Singapore)\b)))(?!.*((?i)回国|校园|游戏|IEPL|(\b(GAME)\b))).*$"}
 
  - {name: 🇯🇵 日本节点, <<: *select, filter: "^(?=.*((?i)🇯🇵|日本|川日|东京|大阪|泉日|埼玉|(\b(JP|Japan)\b)))(?!.*((?i)回国|校园|游戏|IEPL|(\b(GAME)\b))).*$"}
@@ -116,13 +85,43 @@ proxy-groups:
  
  - {name: 🏠家宽, <<: *select,filter: "(?i)家宽"}
 
- - {name: 🛰️特殊节点, <<: *select,filter: "^(?!.*(香港|美国|新加坡|日本|土耳其|韩国)"}
+ - {name: 🛰️特殊节点, <<: *select,filter: "^(?!.*(香港|美国|新加坡|日本|土耳其|韩国|台湾|IEPL|官址|HK|DE|JP|US))"}
 
- - {name: ♻️ 自动选择, <<: *select}
+ #分流分组
 
- - {name: ⚠️ 故障转移, <<: *fallback}
+ - {name: 🚀 手动切换, type: select,  proxies: [🇭🇰 香港节点,  🇸🇬 新加坡节点, 🇺🇸 美国节点, 🇯🇵 日本节点,  DIRECT]}
+
+ - {name: 🌏 国外网站, type: select,  proxies: [🇭🇰 香港节点,  🇸🇬 新加坡节点, 🇺🇸 美国节点, 🇯🇵 日本节点,  DIRECT]}
+
+ - {name: 📹 国际媒体, type: select,  proxies: [🇭🇰 香港节点,  🇸🇬 新加坡节点, 🇺🇸 美国节点, 🇯🇵 日本节点,  DIRECT]}
+
+ - {name: 🍎 苹果服务, type: select,  proxies: [🇭🇰 香港节点, 🇺🇸 美国节点, DIRECT]}
+
+ - {name: 💌 Github,type: select,  proxies: [🇭🇰 香港节点,  🇸🇬 新加坡节点, 🇺🇸 美国节点, 🇯🇵 日本节点,  DIRECT]}
+
+ - {name: 🍿 Netflix, type: select,  proxies: [🇭🇰 香港节点, 🇺🇸 美国节点, 🇸🇬 新加坡节点, 🇯🇵 日本节点, 🇹🇷 土耳其节点, DIRECT]}
+
+ - {name: 🎵 Youtube, type: select,  proxies: [🇭🇰 香港节点, 🇺🇸 美国节点, 🇸🇬 新加坡节点, 🇯🇵 日本节点, 🇰🇷 韩国节点, DIRECT]}
+
+ - {name: 📟 电报消息, type: select,  proxies: [🇭🇰 香港节点,  🇸🇬 新加坡节点, 🇺🇸 美国节点, 🇯🇵 日本节点,  DIRECT]}
+
+ - {name: 🐦 推特消息, type: select,  proxies: [🇭🇰 香港节点,  🇸🇬 新加坡节点, 🇺🇸 美国节点, 🇯🇵 日本节点,  DIRECT]}
  
+ - {name: 🤖 OpenAI, type: select,  proxies: [🇺🇸 美国节点, DIRECT]}
 
+ - {name: 🌌 谷歌服务, type: select,  proxies: [🇭🇰 香港节点,  🇸🇬 新加坡节点, 🇺🇸 美国节点,🇯🇵 日本节点,  DIRECT]}
+
+ - {name: 🎮 游戏平台, type: select,  proxies: [🇭🇰 香港节点,  🇸🇬 新加坡节点, 🇺🇸 美国节点,🇯🇵 日本节点,  DIRECT]}
+  
+ - {name: 📺 哔哩哔哩, type: select, proxies: [DIRECT, 🇭🇰 香港节点]}
+
+ - {name: 🌏 国内网站, type: select, proxies: [DIRECT, 🚀 手动切换]}
+  
+ - {name: 🛑 AdBlock, type: select, proxies: [REJECT, DIRECT]}
+  
+ - {name: 🐟 漏网之鱼, type: select,  proxies: [🇭🇰 香港节点,  🇸🇬 新加坡节点, 🇺🇸 美国节点,🇯🇵 日本节点,  DIRECT]}
+
+ 
 rule-providers:
 
  # 规则修正
@@ -185,7 +184,7 @@ rules:
   - RULE-SET,AD@dler-io,🛑 AdBlock
   - RULE-SET,OpenAI,🤖 OpenAI
   - RULE-SET,Apple,🍎 苹果服务
-  - RULE-SET,Github,📔 Github
+  - RULE-SET,Github,💌 Github
   - RULE-SET,Netflix,🍿 Netflix
   - RULE-SET,Youtube,🎵 Youtube
   - RULE-SET,Telegram,📟 电报消息
