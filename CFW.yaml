@@ -30,7 +30,7 @@ cfw-bypass: ['localhost', '*.local', 'captive.apple.com', 'e.crashlytics.com', '
 pr: &pr {type: select, proxies: [🚀 手动切换, 🇭🇰 香港节点, 🇺🇸 美国节点, 🇸🇬 新加坡节点, 🇯🇵 日本节点,   ♻️ 自动选择, ⚠️ 故障转移, DIRECT]}
 
 # 订阅更新和延迟测试相关参数
-p: &p {type: http, interval: 86400, health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 1800}}
+p: &p {type: http, interval: 86400, health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 1200}}
 
 # 自动选择策略组：选取延迟最低节点
 auto: &auto {type: url-test, lazy: true, url: http://www.gstatic.com/generate_204, interval: 900, use: [Subscribe]}
@@ -67,7 +67,7 @@ proxy-groups:
 
  #节点地区分组
 
- - {name: 🇭🇰 香港节点, <<: *select, filter: "^(?=.*((?i)🇭🇰|香港|(\b(HK|Hong)\b)))(?!.*((?i)回国|校园|游戏|IEPL|(\b(GAME)\b))).*$"}
+ - {name: 🇭🇰 香港节点, <<: *select, filter: "^(?=.*((?i)🇭🇰|香港|(\b(HK|Hong)\b)))(?!.*((?i)回国|校园|游戏|IEPL|Test|(\b(GAME)\b))).*$"}
 
  - {name: 🇨🇳 台湾节点, <<: *select, filter: "(?i)🇹🇼|台湾|(\b(TW|Tai|Taiwan)\b)"}
  
@@ -97,7 +97,7 @@ proxy-groups:
 
  - {name: 🍎 苹果服务, type: select,  proxies: [🇭🇰 香港节点, 🇺🇸 美国节点, DIRECT]}
 
- - {name: 💌 Github,type: select,  proxies: [🇭🇰 香港节点,  🇸🇬 新加坡节点, 🇺🇸 美国节点, 🇯🇵 日本节点,  DIRECT]}
+ - {name: 💌 Github,type: select,  proxies: [🇭🇰 香港节点,  🇸🇬 新加坡节点, 🇺🇸 美国节点, 🇯🇵 日本节点, 🚄IEPL, DIRECT]}
 
  - {name: 🍿 Netflix, type: select,  proxies: [🇭🇰 香港节点, 🇺🇸 美国节点, 🇸🇬 新加坡节点, 🇯🇵 日本节点, 🇹🇷 土耳其节点, DIRECT]}
 
