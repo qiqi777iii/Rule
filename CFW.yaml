@@ -30,7 +30,7 @@ cfw-bypass: ['localhost', '*.local', 'captive.apple.com', 'e.crashlytics.com', '
 pr: &pr {type: select, proxies: [🚀 手动切换, 🇭🇰 香港节点, 🇺🇸 美国节点, 🇸🇬 新加坡节点, 🇯🇵 日本节点,   ♻️ 自动选择, ⚠️ 故障转移, DIRECT]}
 
 # 订阅更新和延迟测试相关参数
-p: &p {type: http, interval: 86400, health-check: {enable: true, url: http://cp.cloudflare.com/generate_204, 间隙: 1200}}
+p: &p {type: http, interval: 86400, health-check: {enable: true, url: http://cp.cloudflare.com/generate_204, interval: 1200}}
 
 # 自动选择策略组：选取延迟最低节点
 auto: &auto {type: url-test, lazy: true, url: http://cp.cloudflare.com/generate_204, interval: 900, use: [Subscribe]}
