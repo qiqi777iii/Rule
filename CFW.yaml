@@ -30,19 +30,19 @@ cfw-bypass: ['localhost', '*.local', 'captive.apple.com', 'e.crashlytics.com', '
 pr: &pr {type: select, proxies: [🚀 手动切换, 🇭🇰 香港节点, 🇺🇸 美国节点, 🇸🇬 新加坡节点, 🇯🇵 日本节点,   ♻️ 自动选择, ⚠️ 故障转移, DIRECT]}
 
 # 订阅更新和延迟测试相关参数
-p: &p {type: http, interval: 86400, health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 1200}}
+p: &p {type: http, interval: 86400, health-check: {enable: true, url: http://cp.cloudflare.com/generate_204, 间隙: 1200}}
 
 # 自动选择策略组：选取延迟最低节点
-auto: &auto {type: url-test, lazy: true, url: http://www.gstatic.com/generate_204, interval: 900, use: [Subscribe]}
+auto: &auto {type: url-test, lazy: true, url: http://cp.cloudflare.com/generate_204, interval: 900, use: [Subscribe]}
 
 # 手动选择策略组：手动选择想要的节点/策略组
 select: &select {type: select, use: [Subscribe]}
 
 # 故障回退策略组：策略组将按顺序选择你列表中第一个可用的节点
-fallback: &fallback {type: fallback, lazy: true, url: http://www.gstatic.com/generate_204, interval: 900, use: [Subscribe]}
+fallback: &fallback {type: fallback, lazy: true, url: http://cp.cloudflare.com/generate_204, interval: 900, use: [Subscribe]}
 
 # 负载均衡策略组：不同的请求将使用不同的代理节点
-load-balance: &load-balance {type: load-balance, lazy: true, url: http://www.gstatic.com/generate_204, interval: 900, use: [Subscribe]}
+load-balance: &load-balance {type: load-balance, lazy: true, url: http://cp.cloudflare.com/generate_204, interval: 900, use: [Subscribe]}
 
 # classical规则相关
 c: &c {type: http, behavior: classical, interval: 86400}
