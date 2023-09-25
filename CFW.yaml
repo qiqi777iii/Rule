@@ -57,7 +57,7 @@ i: &i {type: http, behavior: ipcidr, interval: 86400}
 
 proxy-providers:
 #  Subscribe: {<<: *p, url: https://sub.xeton.dev/sub?target=clash&url=订阅链接e&list=true&udp=true}
-   Subscribe: {<<: *p, url: https://sub.xeton.dev/sub?target=clash&url=https://api.flowercloud.xyz/osubscribe.php?sid=71352&token=PxrkX1MF3g63&sip002=1e&list=true&udp=true}
+   Subscribe: {<<: *p, url: https://api.huacloud.xyz/sub?target=clash&insert=true&emoji=true&udp=true&clash.doh=true&new_name=true&filename=Flower_SS&url=https%3A%2F%2Fapi.flowercloud.xyz%2Fosubscribe.php%3Fsid%3D71352%26token%3DPxrkX1MF3g63%26sip002%3D1|https://support.tagsssubscribe.com/api/v1/client/subscribe?token=77f3a5a02533da67f35b36b1b119250e}
     # 可以使用任意类型的链接替换上面文字,多个链接使用英文符号的竖杠|隔开一起写上即可
     # Sub-Store生成的链接,可以直接替换上述url引号中的部分,具体见Sub-Store教程         
                
@@ -67,25 +67,23 @@ proxy-groups:
 
  #节点地区分组
 
- - {name: 🇭🇰 香港节点, <<: *select, filter: "^(?=.*((?i)🇭🇰|香港|(\b(HK|Hong)\b)))(?!.*((?i)回国|校园|游戏|IEPL|Test|(\b(GAME)\b))).*$"}
+ - {name: 🇭🇰 香港节点, <<: *select, filter: "^(?=.*((?i)🇭🇰|香港|(\b(HK|Hong)\b)))"}
 
  - {name: 🇨🇳 台湾节点, <<: *select, filter: "(?i)🇹🇼|台湾|(\b(TW|Tai|Taiwan)\b)"}
  
- - {name: 🇸🇬 新加坡节点, <<: *select, filter: "^(?=.*((?i)🇸🇬|新加坡|狮|(\b(SG|Singapore)\b)))(?!.*((?i)回国|校园|游戏|IEPL|(\b(GAME)\b))).*$"}
+ - {name: 🇸🇬 新加坡节点, <<: *select, filter: "^(?=.*((?i)🇸🇬|新加坡|狮|(\b(SG|Singapore)\b)))"}
 
- - {name: 🇯🇵 日本节点, <<: *select, filter: "^(?=.*((?i)🇯🇵|日本|川日|东京|大阪|泉日|埼玉|(\b(JP|Japan)\b)))(?!.*((?i)回国|校园|游戏|IEPL|(\b(GAME)\b))).*$"}
+ - {name: 🇯🇵 日本节点, <<: *select, filter: "^(?=.*((?i)🇯🇵|日本|川日|东京|大阪|泉日|埼玉|(\b(JP|Japan)\b)))"}
 
- - {name: 🇺🇸 美国节点, <<: *select, filter: "^(?=.*((?i)🇺🇸|美国|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|(\b(US|United States)\b)))(?!.*((?i)回国|校园|游戏|IEPL|(\b(GAME)\b))).*$"}
+ - {name: 🇺🇸 美国节点, <<: *select, filter: "^(?=.*((?i)🇺🇸|美国|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|(\b(US|United States)\b)))"}
 
  - {name: 🇰🇷 韩国节点, <<: *select, filter: "(?i)韩国|KR"}
 
- - {name: 🇹🇷 土耳其节点, <<: *select, filter: "(?i)土耳其|TR"}
+ - {name: 🇹🇷 土耳其节点, <<: *select, filter: "(?i)土耳其"}
 
- - {name: 🚄IEPL, <<: *select,filter: "(?i)IEPL|iepl"}
- 
  - {name: 🏠家宽, <<: *select,filter: "(?i)家宽"}
 
- - {name: 🛰️特殊节点, <<: *select,filter: "^(?!.*(香港|美国|新加坡|日本|土耳其|韩国|台湾|IEPL|官址|HK|DE|JP|US))"}
+ - {name: 🛰️特殊节点, <<: *select,filter: "^(?!.*(香港|美国|新加坡|日本|土耳其|韩国|台湾|官址|HK|DE|JP|US))"}
 
  #分流分组
 
@@ -97,7 +95,7 @@ proxy-groups:
 
  - {name: 🍎 苹果服务, type: select,  proxies: [🇭🇰 香港节点, 🇺🇸 美国节点, DIRECT]}
 
- - {name: 💌 Github,type: select,  proxies: [🇭🇰 香港节点,  🇸🇬 新加坡节点, 🇺🇸 美国节点, 🇯🇵 日本节点, 🚄IEPL, DIRECT]}
+ - {name: 💌 Github,type: select,  proxies: [🇭🇰 香港节点,  🇸🇬 新加坡节点, 🇺🇸 美国节点, 🇯🇵 日本节点, DIRECT]}
 
  - {name: 🍿 Netflix, type: select,  proxies: [🇭🇰 香港节点, 🇺🇸 美国节点, 🇸🇬 新加坡节点, 🇯🇵 日本节点, 🇹🇷 土耳其节点, DIRECT]}
 
