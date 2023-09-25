@@ -57,7 +57,7 @@ i: &i {type: http, behavior: ipcidr, interval: 86400}
 
 proxy-providers:
 #  Subscribe: {<<: *p, url: https://sub.xeton.dev/sub?target=clash&url=订阅链接e&list=true&udp=true}
-   Subscribe: {<<: *p, url: https://sub.xeton.dev/sub?target=clash&url=https://dy.xfltd.cc/api/v1/client/subscribe?token=e6067941ed5f0e0c23cf812a4ca5e526|https://support.tagsssubscribe.com/api/v1/client/subscribe?token=77f3a5a02533da67f35b36b1b119250e&list=true&udp=true}
+   Subscribe: {<<: *p, url: https://api.flowercloud.xyz/osubscribe.php?sid=71352&token=PxrkX1MF3g63&sip002=1&list=true&udp=true}
     # 可以使用任意类型的链接替换上面文字,多个链接使用英文符号的竖杠|隔开一起写上即可
     # Sub-Store生成的链接,可以直接替换上述url引号中的部分,具体见Sub-Store教程         
                
