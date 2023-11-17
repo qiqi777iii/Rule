@@ -149,7 +149,7 @@ rule-providers:
  Google: {<<: *c, path: ./ruleset/Google.yaml, url: https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.yaml}
 
  # 微软服务
- Microsoft: {<<: *c, path: ./ruleset/Microsoft.yaml, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.yaml}  
+ Microsoft: {<<: *c, path: ./ruleset/Microsoft.yaml, url: https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.yaml}  
 
  # MEGA
  MEGA: {<<: *c, path: ./ruleset/MEGA.yaml, url: https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/MEGA/MEGA.yaml}  
@@ -158,10 +158,10 @@ rule-providers:
  Telegram: {<<: *c, path: ./ruleset/Telegram.yaml, url: https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.yaml}
 
  # Netflix
- Netflix: {<<: *c, path: ./ruleset/Netflix.yaml, url:  https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix.yaml}
+ Netflix: {<<: *c, path: ./ruleset/Netflix.yaml, url:  https://ghproxy.com/https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix.yaml}
  
  # 推特消息
- Twitter: {<<: *c, path: ./ruleset/Twitter.yaml, url: https://ghproxy.com/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/Twitter.yaml}
+ Twitter: {<<: *c, path: ./ruleset/Twitter.yaml, url:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitter/Twitter.yaml}
 
  # Youtube
  Youtube: {<<: *c,path: ./ruleset/Youtube.yaml, url: https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.yaml}
@@ -170,14 +170,14 @@ rule-providers:
  BiliBili: {<<: *c, path: ./ruleset/BiliBili.yaml, url: https://ghproxy.com/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/Bilibili.yaml}
 
  # 游戏平台
- Game: {<<: *c, path: ./ruleset/Game.yaml, url: https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/Game.yaml}
+ Game: {<<: *c, path: ./ruleset/Game.yaml, url: https://ghproxy.com/https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/Game.yaml}
 
  # AI平台
- OpenAI: {<<: *c, path: ./ruleset/OpenAI.yaml, url: https://ghproxy.com/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/OpenAi.yaml}
+ OpenAI: {<<: *c, path: ./ruleset/OpenAI.yaml, url: https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/Game.yaml}
 
  # 中国大陆
- ChinaIP: {<<: *i, path: ./ruleset/ChinaIP.yaml, url: https://ghproxy.com/https://raw.githubusercontent.com/soffchen/GeoIP2-CN/release/clash-rule-provider.yml}
- ChinaDomain: {<<: *c, path: ./ruleset/ChinaDomain.yaml, url: https://ghproxy.com/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaDomain.yaml}
+ ChinaIP: {<<: *i, path: ./ruleset/ChinaIPs_IP.yaml, url: https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaIPs/ChinaIPs_IP.yaml}
+ ChinaDomain: {<<: *c, path: ./ruleset/China_Domain.yaml, url: https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/China/China_Domain.yaml}
 
 # 国际媒体
  GlobalMedia: {<<: *c, path: ./ruleset/GlobalMedia.yaml, url: https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GlobalMedia/GlobalMedia.yaml}
@@ -190,25 +190,25 @@ rules:
   - RULE-SET,Direct,DIRECT
   - RULE-SET,Lan,DIRECT
 #  - RULE-SET,Download,DIRECT
-  - RULE-SET,AD@dler-io, AdBlock
-  - RULE-SET,OpenAI, OpenAI
-  - RULE-SET,Apple, 苹果服务
-  - RULE-SET,Github,‍ Github
-  - RULE-SET,Netflix, Netflix
-  - RULE-SET,Youtube, Youtube
-  - RULE-SET,Telegram, 电报消息
-  - RULE-SET,Twitter, 推特消息
-  - RULE-SET,BiliBili, 哔哩哔哩
-  - RULE-SET,Google, 谷歌服务
-  - RULE-SET,MEGA, MEGA
-  - RULE-SET, Microsoft, 微软服务
-  - RULE-SET,Game, 游戏平台
-  - RULE-SET,GlobalMedia, 国际媒体
-  - RULE-SET,Global, 国外网站
-  - RULE-SET,ChinaDomain, 国内网站
-  - RULE-SET,ChinaIP, 国内网站
-  - GEOIP,CN, 国内网站
-  - MATCH, 漏网之鱼
+  - RULE-SET,AD@dler-io,🛑 AdBlock
+  - RULE-SET,OpenAI,🤖 OpenAI
+  - RULE-SET,Apple,🍎 苹果服务
+  - RULE-SET,Github,🐱‍💻 Github
+  - RULE-SET,Netflix,🎞️ Netflix
+  - RULE-SET,Youtube,🎶 Youtube
+  - RULE-SET,Telegram,✈️ 电报消息
+  - RULE-SET,Twitter,✖️ 推特消息
+  - RULE-SET,BiliBili,📺 哔哩哔哩
+  - RULE-SET,Google,🌌 谷歌服务
+  - RULE-SET,MEGA,☁️ MEGA
+  - RULE-SET, Microsoft,🧊 微软服务
+  - RULE-SET,Game,🕹️ 游戏平台
+  - RULE-SET,GlobalMedia,🎦 国际媒体
+  - RULE-SET,Global,🌏 国外网站
+  - RULE-SET,ChinaDomain,🌏 国内网站
+  - RULE-SET,ChinaIP,🌏 国内网站
+  - GEOIP,CN,🌏 国内网站
+  - MATCH,🐟 漏网之鱼
 
 script:
   shortcuts:
