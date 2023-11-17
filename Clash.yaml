@@ -1,6 +1,3 @@
-#port: 7890           # HTTP 代理端口
-#socks-port: 7891     # SOCKS5 代理端口
-#redir-port: 7892     # Linux 和 macOS 的 redir 代理端口
 mixed-port: 7893      # 混合端口 HTTP和SOCKS5用一个端口
 allow-lan: true       # 允许局域网的连接（可用来共享代理）
 bind-address: "*"     # 仅在将allow-lan设置为true时适用
@@ -27,10 +24,10 @@ cfw-bypass: ['localhost', '*.local', 'captive.apple.com', 'e.crashlytics.com', '
 ###建立锚点
     
 # 策略组引用相关参数
-pr: &pr {type: select, proxies: [🚀 手动切换, 🇭🇰 香港节点, 🇺🇸 美国节点, 🇸🇬 新加坡节点, 🇯🇵 日本节点,   ♻️ 自动选择, ⚠️ 故障转移, DIRECT]}
+pr: &pr {type: select, proxies: [🚀 手动切换, 🇭🇰 香港节点, 🇺🇸 美国节点, 🇸🇬 狮城节点, 🇯🇵 日本节点,  🇨🇳 台湾节点, ♻️ 自动选择, ⚠️ 故障转移, DIRECT]}
 
 # 订阅更新和延迟测试相关参数
-p: &p {type: http, interval: 86400, health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 1200}}
+p: &p {type: http, interval: 86400, health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 1800}}
 
 # 自动选择策略组：选取延迟最低节点
 auto: &auto {type: url-test, lazy: true, url: http://www.gstatic.com/generate_204, interval: 900, use: [Subscribe]}
@@ -56,161 +53,131 @@ i: &i {type: http, behavior: ipcidr, interval: 86400}
 ###结束
 
 proxy-providers:
-#  Subscribe: {<<: *p, url: https://sub.xeton.dev/sub?target=clash&url=订阅链接e&list=true&udp=true}
-   Subscribe: {<<: *p, url: https://sub.xeton.dev/sub?target=clash&url=https://api.huacloud.xyz/sub?target=clash&insert=true&emoji=true&udp=true&clash.doh=true&new_name=true&filename=Flower_SS&url=https%3A%2F%2Fapi.flowercloud.xyz%2Fosubscribe.php%3Fsid%3D71352%26token%3DPxrkX1MF3g63%26sip002%3D1e&list=true&udp=true}
+  Subscribe: {<<: *p, url: https://sub.xeton.dev/sub?target=clash&url=https://api.huacloud.xyz/sub?target=clash&insert=true&emoji=true&udp=true&clash.doh=true&new_name=true&filename=Flower_SS&url=https%3A%2F%2Fapi.flowercloud.xyz%2Fosubscribe.php%3Fsid%3D71352%26token%3DPxrkX1MF3g63%26sip002%3D1&list=true&udp=true}
     # 可以使用任意类型的链接替换上面文字,多个链接使用英文符号的竖杠|隔开一起写上即可
-    # Sub-Store生成的链接,可以直接替换上述url引号中的部分,具体见Sub-Store教程         
+    # Sub-Store生成的Gist链接(Clash类型),可以直接替换上述url引号中的部分,具体见Sub-Store教程         
                
-proxies: 
-
+proxies: null
 
 proxy-groups:
 
- #节点地区分组
+  #分流分组
 
- - {name: 🇭🇰 香港节点, <<: *select, filter: "^(?=.*((?i)🇭🇰|香港|(\b(HK|Hong|香港)\b)))"}
+  - {name: 🚀 手动切换, type: select, use: [Subscribe], proxies: [🇭🇰 香港节点, 🇺🇸 美国节点, 🇸🇬 狮城节点, 🇯🇵 日本节点, 🇨🇳 台湾节点, DIRECT]}
 
- - {name: 🇨🇳 台湾节点, <<: *select, filter: "(?i)🇹🇼|台湾|(\b(TW|Tai|Taiwan)\b)"}
- 
- - {name: 🇸🇬 新加坡节点, <<: *select, filter: "^(?=.*((?i)🇸🇬|新加坡|狮|(\b(SG|Singapore)\b)))"}
+  - {name: 🌏 国外网站, <<: *pr}
 
- - {name: 🇯🇵 日本节点, <<: *select, filter: "^(?=.*((?i)🇯🇵|日本|川日|东京|大阪|泉日|埼玉|(\b(JP|Japan)\b)))"}
+  - {name: 📹 国际媒体, <<: *pr}
 
- - {name: 🇺🇸 美国节点, <<: *select, filter: "^(?=.*((?i)🇺🇸|美国|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|(\b(US|United States)\b)))"}
+  - {name: 🍎 苹果服务, <<: *pr}
 
- - {name: 🇰🇷 韩国节点, <<: *select, filter: "(?i)韩国|KR"}
+  - {name: 🧩 微软服务, <<: *pr}
 
- - {name: 🇹🇷 土耳其节点, <<: *select, filter: "(?i)土耳其|TR"}
+  - {name: 🌌 谷歌服务, <<: *pr}
 
-# - {name: 🏠家宽, <<: *select,filter: "(?i)家宽"}
+  - {name: 📟 电报消息, <<: *pr}
 
- - {name: 🛰️特殊节点, <<: *select,filter: "^(?!.*(香港|美国|新加坡|日本|土耳其|韩国|台湾|官址|HK|DE|JP|US))"}
+  - {name: 🐦 推特消息, <<: *pr}
 
- #分流分组
+  - {name: 🤖 OpenAI, <<: *pr}
 
- - {name: 🚀 手动切换, type: select,  proxies: [🇭🇰 香港节点, 🇸🇬 新加坡节点, 🇺🇸 美国节点, 🇯🇵 日本节点,  DIRECT]}
+  - {name: 🎮 游戏平台, <<: *pr}
 
- - {name: 🎦 国际媒体, type: select,  proxies: [🇭🇰 香港节点, 🇸🇬 新加坡节点, 🇺🇸 美国节点, 🇯🇵 日本节点,  DIRECT]}
+  - {name: 📺 哔哩哔哩, type: select, proxies: [DIRECT, 🇭🇰 香港节点, 🇨🇳 台湾节点]}
 
- - {name: 🍎 苹果服务, type: select,  proxies: [🇭🇰 香港节点, 🇺🇸 美国节点, DIRECT]}
+  - {name: 🌏 国内网站, type: select, proxies: [DIRECT, 🚀 手动切换]}
 
- - {name: 🐱‍💻 Github,type: select,  proxies: [🇭🇰 香港节点,  🇸🇬 新加坡节点, 🇺🇸 美国节点, 🇯🇵 日本节点, DIRECT]}
+  - {name: 🛑 AdBlock, type: select, proxies: [REJECT, DIRECT]}
 
- - {name: 🎞️ Netflix, type: select,  proxies: [🇭🇰 香港节点, 🇺🇸 美国节点, 🇸🇬 新加坡节点, 🇯🇵 日本节点, 🇹🇷 土耳其节点, DIRECT]}
+  - {name: 🐟 漏网之鱼, <<: *pr}
 
- - {name: 🎶 Youtube, type: select,  proxies: [🇭🇰 香港节点, 🇺🇸 美国节点, 🇸🇬 新加坡节点, 🇯🇵 日本节点, 🇰🇷 韩国节点, DIRECT]}
+  #节点地区分组
 
- - {name: ✈️ 电报消息, type: select,  proxies: [🇭🇰 香港节点, 🇸🇬 新加坡节点, 🇺🇸 美国节点, 🇯🇵 日本节点,  DIRECT]}
+  - {name: 🇭🇰 香港节点, <<: *auto, filter: "^(?=.*((?i)🇭🇰|香港|(\b(HK|Hong)\b)))(?!.*((?i)回国|校园|游戏|(\b(GAME)\b))).*$"}
 
- - {name: ✖️ 推特消息, type: select,  proxies: [🇭🇰 香港节点, 🇸🇬 新加坡节点, 🇺🇸 美国节点, 🇯🇵 日本节点,  DIRECT]}
- 
- - {name: 🤖 OpenAI, type: select,  proxies: [🇺🇸 美国节点, DIRECT]}
+  - {name: 🇺🇸 美国节点, <<: *auto, filter: "^(?=.*((?i)🇺🇸|美国|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|(\b(US|United States)\b)))(?!.*((?i)回国|校园|游戏|(\b(GAME)\b))).*$"}
 
- - {name: ☁️ MEGA, type: select,  proxies: [🇭🇰 香港节点, 🇸🇬 新加坡节点, 🇺🇸 美国节点,🇯🇵 日本节点,  DIRECT]}
+  - {name: 🇸🇬 狮城节点, <<: *auto, filter: "^(?=.*((?i)🇸🇬|新加坡|狮|(\b(SG|Singapore)\b)))(?!.*((?i)回国|校园|游戏|(\b(GAME)\b))).*$"}
 
- - {name: 🌌 谷歌服务, type: select,  proxies: [🇭🇰 香港节点, 🇸🇬 新加坡节点, 🇺🇸 美国节点,🇯🇵 日本节点,  DIRECT]}
+  - {name: 🇯🇵 日本节点, <<: *auto, filter: "^(?=.*((?i)🇯🇵|日本|川日|东京|大阪|泉日|埼玉|(\b(JP|Japan)\b)))(?!.*((?i)回国|校园|游戏|(\b(GAME)\b))).*$"}
 
- - {name: 🧊 微软服务, type: select,  proxies: [🇭🇰 香港节点, 🇸🇬 新加坡节点, 🇺🇸 美国节点,🇯🇵 日本节点,  DIRECT]}
+  - {name: 🇨🇳 台湾节点, <<: *auto, filter: "(?i)🇹🇼|台|台湾|(\b(TW|Tai|Taiwan)\b)"}
 
- - {name: 🕹️ 游戏平台, type: select,  proxies: [🇭🇰 香港节点, 🇸🇬 新加坡节点, 🇺🇸 美国节点,🇯🇵 日本节点,  DIRECT]}
-  
- - {name: 📺 哔哩哔哩, type: select, proxies: [DIRECT, 🇭🇰 香港节点]}
+  - {name: ♻️ 自动选择, <<: *auto}
 
- - {name: 🌏 国外网站, type: select,  proxies: [🇭🇰 香港节点, 🇸🇬 新加坡节点, 🇺🇸 美国节点, 🇯🇵 日本节点,  DIRECT]}
+  - {name: ⚠️ 故障转移, <<: *fallback}
 
- - {name: 🌏 国内网站, type: select, proxies: [DIRECT, 🚀 手动切换]}
-  
- - {name: 🛑 AdBlock, type: select, proxies: [REJECT, DIRECT]}
-  
- - {name: 🐟 漏网之鱼, type: select,  proxies: [🇭🇰 香港节点, 🇸🇬 新加坡节点, 🇺🇸 美国节点,🇯🇵 日本节点,  DIRECT]}
-
- 
 rule-providers:
 
- # 直连
- Direct: {<<: *c, path: ./ruleset/Direct.yaml, url: https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Direct/Direct.yaml}
+  # 规则修正
+  Direct: {<<: *c, path: ./ruleset/Direct.yaml, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Direct/Direct.yaml}
 
- # 局域网   
- Lan: {<<: *c, path: ./ruleset/Lan.yaml, url: https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Lan/Lan.yaml}
+  # 局域网   
+  Lan: {<<: *c, path: ./ruleset/Lan.yaml, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Lan/Lan.yaml}
 
- # 下载服务
- Download: {<<: *c, path: ./ruleset/Download.yaml, url: https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Download/Download.yaml}
+  # 下载服务
+  Download: {<<: *c, path: ./ruleset/Download.yaml, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Download/Download.yaml}
     
- #广告拦截
- AD@dler-io: {<<: *c, path: ./ruleset/AD.yaml, url: https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AdvertisingLite/AdvertisingLite.yaml}
+  #广告拦截
+  Advertising: {<<: *c, path: ./rulesetAdvertising.yaml, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Advertising/Advertising.yaml}
 
   # 苹果服务
- Apple: {<<: *c, path: ./ruleset/Apple.yaml, url: https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple_Classical.yaml}
+  Apple: {<<: *c, path: ./ruleset/Apple.yaml, url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Apple.yaml}
 
- # Github 
- Github: {<<: *c, path: ./ruleset/Github.yaml,url: https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GitHub/GitHub.yaml}
+  # 微软服务 
+  Microsoft: {<<: *c, path: ./ruleset/Microsoft.yaml, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.yaml}
 
- # 谷歌服务
- Google: {<<: *c, path: ./ruleset/Google.yaml, url: https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.yaml}
+  # 谷歌服务
+  Youtube: {<<: *c, path: ./ruleset/Youtube.yaml, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.yaml}
+  Google: {<<: *c, path: ./ruleset/Google.yaml, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.yaml}
 
- # 微软服务
- Microsoft: {<<: *c, path: ./ruleset/Microsoft.yaml, url: https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.yaml}  
+  # 电报消息
+  Telegram: {<<: *c, path: ./ruleset/Telegram.yaml, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.yaml}
 
- # MEGA
- MEGA: {<<: *c, path: ./ruleset/MEGA.yaml, url: https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/MEGA/MEGA.yaml}  
+  # 推特消息
+  Twitter: {<<: *c, path: ./ruleset/Twitter.yaml, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitter/Twitter.yaml}
 
- # 电报消息
- Telegram: {<<: *c, path: ./ruleset/Telegram.yaml, url: https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.yaml}
+  # 哔哩哔哩
+  BiliBili: {<<: *c, path: ./ruleset/BiliBili.yaml, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/BiliBili/BiliBili.yaml}
 
- # Netflix
- Netflix: {<<: *c, path: ./ruleset/Netflix.yaml, url:  https://ghproxy.com/https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix.yaml}
- 
- # 推特消息
- Twitter: {<<: *c, path: ./ruleset/Twitter.yaml, url:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitter/Twitter.yaml}
+  # 游戏平台
+  Game: {<<: *c, path: ./ruleset/Game.yaml, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/Game.yaml}
 
- # Youtube
- Youtube: {<<: *c,path: ./ruleset/Youtube.yaml, url: https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.yaml}
- 
- # 哔哩哔哩
- BiliBili: {<<: *c, path: ./ruleset/BiliBili.yaml, url: https://ghproxy.com/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/Bilibili.yaml}
+  # AI平台
+  OpenAI: {<<: *c, path: ./ruleset/OpenAI.yaml, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.yaml}
 
- # 游戏平台
- Game: {<<: *c, path: ./ruleset/Game.yaml, url: https://ghproxy.com/https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/Game.yaml}
+  # 中国大陆
+  ChinaIP: {<<: *i, path: ./ruleset/ChinaIPs_IP.yaml, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaIPs/ChinaIPs_IP.yaml}
+  ChinaMax: {<<: *c, path: ./ruleset/ChinaMax.yaml, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMax/ChinaMax.yaml}
 
- # AI平台
- OpenAI: {<<: *c, path: ./ruleset/OpenAI.yaml, url: https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/Game.yaml}
+  # 国际媒体
+  GlobalMedia: {<<: *c, path: ./ruleset/GlobalMedia.yaml, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GlobalMedia/GlobalMedia.yaml}
 
- # 中国大陆
- ChinaIP: {<<: *i, path: ./ruleset/ChinaIPs_IP.yaml, url: https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaIPs/ChinaIPs_IP.yaml}
- ChinaDomain: {<<: *c, path: ./ruleset/China_Domain.yaml, url: https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/China/China_Domain.yaml}
-
-# 国际媒体
- GlobalMedia: {<<: *c, path: ./ruleset/GlobalMedia.yaml, url: https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GlobalMedia/GlobalMedia.yaml}
-
- # 代理网站
- Global: {<<: *c, path: ./ruleset/Global.yaml, url: https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Global/Global.yaml}
+  # 代理网站
+  Global: {<<: *c, path: ./ruleset/Global.yaml, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Global/Global.yaml}
  
 rules:
   #- SCRIPT,quic,REJECT
   - RULE-SET,Direct,DIRECT
   - RULE-SET,Lan,DIRECT
-#  - RULE-SET,Download,DIRECT
+  #- RULE-SET,Download,DIRECT
   - RULE-SET,AD@dler-io,🛑 AdBlock
   - RULE-SET,OpenAI,🤖 OpenAI
   - RULE-SET,Apple,🍎 苹果服务
-  - RULE-SET,Github,🐱‍💻 Github
-  - RULE-SET,Netflix,🎞️ Netflix
-  - RULE-SET,Youtube,🎶 Youtube
-  - RULE-SET,Telegram,✈️ 电报消息
-  - RULE-SET,Twitter,✖️ 推特消息
-  - RULE-SET,BiliBili,📺 哔哩哔哩
+  - RULE-SET,Microsoft,🧩 微软服务
+  - RULE-SET,Youtube,🌌 谷歌服务
   - RULE-SET,Google,🌌 谷歌服务
-  - RULE-SET,MEGA,☁️ MEGA
-  - RULE-SET, Microsoft,🧊 微软服务
-  - RULE-SET,Game,🕹️ 游戏平台
-  - RULE-SET,GlobalMedia,🎦 国际媒体
+  - RULE-SET,Telegram,📟 电报消息
+  - RULE-SET,Twitter,🐦 推特消息
+  - RULE-SET,BiliBili,📺 哔哩哔哩
+  - RULE-SET,Game,🎮 游戏平台
+  - RULE-SET,GlobalMedia,📹 国际媒体
   - RULE-SET,Global,🌏 国外网站
-  - RULE-SET,ChinaDomain,🌏 国内网站
-  - RULE-SET,ChinaIP,🌏 国内网站
+  - RULE-SET,ChinaMax,🌏 国内网站
+  - RULE-SET,ChinaIPs_IP,🌏 国内网站
   - GEOIP,CN,🌏 国内网站
   - MATCH,🐟 漏网之鱼
 
 script:
   shortcuts:
-    quic: network == 'http' and dst_port == 443
-    ##
+    quic: network == 'udp' and dst_port == 443
