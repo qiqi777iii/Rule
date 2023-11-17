@@ -81,6 +81,10 @@ proxy-groups:
 
   - {name: 🤖 OpenAI, <<: *pr}
 
+  - {name: ☁️ MEGA, <<: *pr}
+
+  - {name: 📺 Netflix, <<: *pr}
+
   - {name: 🎮 游戏平台, <<: *pr}
 
   - {name: 📺 哔哩哔哩, type: select, proxies: [DIRECT, 🇭🇰 香港节点, 🇨🇳 台湾节点]}
@@ -146,6 +150,12 @@ rule-providers:
   # AI平台
   OpenAI: {<<: *c, path: ./ruleset/OpenAI.yaml, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.yaml}
 
+  # MEGA
+  MEGA: {<<: *c, path: ./ruleset/MEGA.yaml, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/MEGA/MEGA.yaml}
+
+  # Netflix
+  Netflix: {<<: *c, path: ./ruleset/Netflix.yaml, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix.yaml}
+
   # 中国大陆
   ChinaIP: {<<: *i, path: ./ruleset/ChinaIP.yaml, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaIPs/ChinaIPs_IP.yaml}
   ChinaMax: {<<: *c, path: ./ruleset/ChinaMax.yaml, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMax/ChinaMax.yaml}
@@ -163,6 +173,8 @@ rules:
   #- RULE-SET,Download,DIRECT
   - RULE-SET,Advertising,🛑 AdBlock
   - RULE-SET,OpenAI,🤖 OpenAI
+  - RULE-SET,MEGA,☁️ MEGA
+  - RULE-SET,Netflix,📺 Netflix
   - RULE-SET,Apple,🍎 苹果服务
   - RULE-SET,Microsoft,🧩 微软服务
   - RULE-SET,Youtube,🌌 谷歌服务
