@@ -30,7 +30,7 @@ pr: &pr {type: select, proxies: [🚀 手动切换, 🇭🇰 香港节点, 🇺�
 p: &p {type: http, interval: 86400, health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 1800}}
 
 # 自动选择策略组：选取延迟最低节点
-auto: &auto {type: url-test, lazy: true, url: http://www.gstatic.com/generate_204, interval: 900, use: [Subscribe]}
+auto: &auto {type: select, lazy: true, url: http://www.gstatic.com/generate_204, interval: 900, use: [Subscribe]}
 
 # 手动选择策略组：手动选择想要的节点/策略组
 select: &select {type: select, use: [Subscribe]}
@@ -53,7 +53,7 @@ i: &i {type: http, behavior: ipcidr, interval: 86400}
 ###结束
 
 proxy-providers:
-  Subscribe: {<<: *p, url: https://sub.xeton.dev/sub?target=clash&url==https://api.huacloud.xyz/sub?target=clash&insert=true&emoji=true&udp=true&clash.doh=true&new_name=true&filename=Flower_SS&url=https%3A%2F%2Fapi.flowercloud.xyz%2Fosubscribe.php%3Fsid%3D71352%26token%3DPxrkX1MF3g63%26sip002%3D1e&list=true&udp=true}
+  Subscribe: {<<: *p, url: https://sub.xeton.dev/sub?target=clash&url=https://api.huacloud.xyz/sub?target=clash&insert=true&emoji=true&udp=true&clash.doh=true&new_name=true&filename=Flower_SS&url=https%3A%2F%2Fapi.flowercloud.xyz%2Fosubscribe.php%3Fsid%3D71352%26token%3DPxrkX1MF3g63%26sip002%3D1e&list=true&udp=true}
     # 可以使用任意类型的链接替换上面文字,多个链接使用英文符号的竖杠|隔开一起写上即可
     # Sub-Store生成的Gist链接(Clash类型),可以直接替换上述url引号中的部分,具体见Sub-Store教程         
                
@@ -119,7 +119,7 @@ rule-providers:
   Download: {<<: *c, path: ./ruleset/Download.yaml, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Download/Download.yaml}
     
   #广告拦截
-  Advertising: {<<: *c, path: ./rulesetAdvertising.yaml, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Advertising/Advertising.yaml}
+  Advertising: {<<: *c, path: ./ruleset/Advertising.yaml, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Advertising/Advertising.yaml}
 
   # 苹果服务
   Apple: {<<: *c, path: ./ruleset/Apple.yaml, url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Apple.yaml}
@@ -147,7 +147,7 @@ rule-providers:
   OpenAI: {<<: *c, path: ./ruleset/OpenAI.yaml, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.yaml}
 
   # 中国大陆
-  ChinaIP: {<<: *i, path: ./ruleset/ChinaIPs_IP.yaml, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaIPs/ChinaIPs_IP.yaml}
+  ChinaIP: {<<: *i, path: ./ruleset/ChinaIP.yaml, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaIPs/ChinaIPs_IP.yaml}
   ChinaMax: {<<: *c, path: ./ruleset/ChinaMax.yaml, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMax/ChinaMax.yaml}
 
   # 国际媒体
@@ -161,7 +161,7 @@ rules:
   - RULE-SET,Direct,DIRECT
   - RULE-SET,Lan,DIRECT
   #- RULE-SET,Download,DIRECT
-  - RULE-SET,AD@dler-io,🛑 AdBlock
+  - RULE-SET,Advertising,🛑 AdBlock
   - RULE-SET,OpenAI,🤖 OpenAI
   - RULE-SET,Apple,🍎 苹果服务
   - RULE-SET,Microsoft,🧩 微软服务
@@ -174,7 +174,7 @@ rules:
   - RULE-SET,GlobalMedia,📹 国际媒体
   - RULE-SET,Global,🌏 国外网站
   - RULE-SET,ChinaMax,🌏 国内网站
-  - RULE-SET,ChinaIPs_IP,🌏 国内网站
+  - RULE-SET,ChinaIP,🌏 国内网站
   - GEOIP,CN,🌏 国内网站
   - MATCH,🐟 漏网之鱼
 
