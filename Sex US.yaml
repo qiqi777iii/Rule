@@ -1,12 +1,12 @@
 # NAME: Sex US
 # AUTHOR: qiqi
 payload:
-  - DOMAIN-SUFFIX,xvideos.com
-  - DOMAIN-SUFFIX,cn.pornhub.com
-  - DOMAIN-SUFFIX,www.eporner.com
-  - DOMAIN-SUFFIX,spankbang.com
-  - DOMAIN-SUFFIX,xhamster.com
-  - DOMAIN-SUFFIX,fullporner.org
-  - DOMAIN-SUFFIX,www.redtube.com
-  - DOMAIN-SUFFIX,www.ixxx.com
-  - DOMAIN-SUFFIX,www.porn00.org
+  - DOMAIN-KEYWORD,xvideos
+  - DOMAIN-KEYWORD,pornhub
+  - DOMAIN-KEYWORD,eporner
+  - DOMAIN-KEYWORD,spankbang
+  - DOMAIN-KEYWORD,xhamster
+  - DOMAIN-KEYWORD,fullporner
+  - DOMAIN-KEYWORD,redtube
+  - DOMAIN-KEYWORD,ixxx
+  - DOMAIN-KEYWORD,porn00
