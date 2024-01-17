@@ -1,4 +1,4 @@
-# NAME: Sex HK
+# NAME: IP Check
 # AUTHOR: qiqi
 payload:
   - DOMAIN-SUFFIX,ip-score.com
