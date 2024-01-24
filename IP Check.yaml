@@ -4,4 +4,4 @@ payload:
   - DOMAIN-SUFFIX,ip-score.com
   - DOMAIN-SUFFIX,ip.im
   - DOMAIN-SUFFIX,ip-lookup.org
-  - DOMAIN-KEYWORD,ipinfo.io
+  - DOMAIN-KEYWORD,ipinfo
