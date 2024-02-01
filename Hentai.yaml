@@ -1,9 +1,10 @@
 # NAME: Hentai
 # AUTHOR: qiqi
 payload:
+  - DOMAIN-KEYWORD,picacomic
+  - DOMAIN-KEYWORD,18comic
+  - DOMAIN-KEYWORD,jmapiproxy
   - DOMAIN-KEYWORD,nhtai
   - DOMAIN-KEYWORD,ehgt
   - DOMAIN-KEYWORD,exhentai
   - DOMAIN-KEYWORD,e-hentai
-  - DOMAIN-KEYWORD,18comic
-  - DOMAIN-KEYWORD,jmapiproxy
