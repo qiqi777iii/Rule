@@ -1,6 +1,7 @@
 # NAME: Sex Japan
 # AUTHOR: qiqi
 payload:
+  - DOMAIN-SUFFIX,dmm.co.jp
   - DOMAIN-KEYWORD,missav
   - DOMAIN-KEYWORD,doppiocdn
   - DOMAIN-KEYWORD,lilliwelch
