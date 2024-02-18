@@ -5,3 +5,4 @@ payload:
   - DOMAIN-SUFFIX,ip.im
   - DOMAIN-SUFFIX,ip-lookup.org
   - DOMAIN-KEYWORD,ipinfo
+  - DOMAIN-KEYWORD,ip.skk
