@@ -1,5 +1,6 @@
 # NAME: IP Check
 # AUTHOR: qiqi
+DOMAIN,iplark.com
 DOMAIN-SUFFIX,ip-score.com
 DOMAIN-SUFFIX,ip.im
 DOMAIN-SUFFIX,ip-lookup.org
