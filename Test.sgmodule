@@ -1,16 +1,30 @@
-#!name=Network Speed Test
-#!desc=网络测速配置模块 - 支持参数自定义
-#!system=ios
-#!arguments=DOWNLOAD_URL:https://speed.cloudflare.com/__down?bytes=100000000,UPLOAD_URL:https://speed.cloudflare.com/__up,DOWNLOAD_URL_PROXY:,UPLOAD_URL_PROXY:,DOWNLOAD_CONCURRENCY:4,UPLOAD_CONCURRENCY:4,DOWNLOAD_DURATION:10,UPLOAD_SIZE:1073741824,UPLOAD_DURATION:10
-#!arguments-desc=DOWNLOAD_URL: 下载测速URL\nUPLOAD_URL: 上传测速URL\nDOWNLOAD_URL_PROXY: 代理模式下载URL(留空则使用download-url)\nUPLOAD_URL_PROXY: 代理模式上传URL(留空则使用upload-url)\nDOWNLOAD_CONCURRENCY: 下载并发数(默认4)\nUPLOAD_CONCURRENCY: 上传并发数(默认4)\nDOWNLOAD_DURATION: 下载时长限制-秒(默认10)\nUPLOAD_SIZE: 上传大小限制-字节(默认1GB)\nUPLOAD_DURATION: 上传时长限制-秒(默认10)
+#!name=自定义测速配置 (Testing)
+#!desc=用于配置 Surge 的内部测速参数。支持直接在 Surge 界面中点击本模块进行可视化编辑。
+
+// 基础测速链接配置
+#!argument=DownloadURL, type=string, default="http://speedtest.macupdate.com/speedtest/100MB.zip", description="download-url: 直连下载测速链接"
+#!argument=UploadURL, type=string, default="http://speedtest.macupdate.com/speedtest/100MB.zip", description="upload-url: 直连上传测速链接"
+
+// 代理测速链接配置（留空则默认使用上方直连链接）
+#!argument=DownloadURLProxy, type=string, default="", description="download-url-proxy: 代理专用下载测速链接"
+#!argument=UploadURLProxy, type=string, default="", description="upload-url-proxy: 代理专用上传测速链接"
+
+// 并发限制（默认为 4）
+#!argument=DownloadConcurrency, type=number, default=4, description="download-concurrency: 下载并发数"
+#!argument=UploadConcurrency, type=number, default=4, description="upload-concurrency: 上传并发数"
+
+// 时长与大小限制
+#!argument=DownloadDurationLimit, type=number, default=10, description="download-duration-limit: 下载测速最大时长（秒）"
+#!argument=UploadDurationLimit, type=number, default=10, description="upload-duration-limit: 上传测速最大时长（秒）"
+#!argument=UploadSizeLimit, type=string, default="1GB", description="upload-size-limit: 上传数据大小限制"
 
 [Testing]
-download-url = {{{DOWNLOAD_URL}}}
-upload-url = {{{UPLOAD_URL}}}
-download-url-proxy = {{{DOWNLOAD_URL_PROXY}}}
-upload-url-proxy = {{{UPLOAD_URL_PROXY}}}
-download-concurrency = {{{DOWNLOAD_CONCURRENCY}}}
-upload-concurrency = {{{UPLOAD_CONCURRENCY}}}
-download-duration-limit = {{{DOWNLOAD_DURATION}}}
-upload-size-limit = {{{UPLOAD_SIZE}}}
-upload-duration-limit = {{{UPLOAD_DURATION}}}
+download-url = {{{DownloadURL}}}
+upload-url = {{{UploadURL}}}
+download-url-proxy = {{{DownloadURLProxy}}}
+upload-url-proxy = {{{UploadURLProxy}}}
+download-concurrency = {{{DownloadConcurrency}}}
+upload-concurrency = {{{UploadConcurrency}}}
+download-duration-limit = {{{DownloadDurationLimit}}}
+upload-size-limit = {{{UploadSizeLimit}}}
+upload-duration-limit = {{{UploadDurationLimit}}}
