@@ -1,37 +1,14 @@
 #!name=Network Speed Test
-#!desc=网络测速配置模块 - 可自定义下载/上传测试参数
+#!desc=网络测速配置模块 - 支持参数自定义
 #!system=ios
-
-[Script]
-# 此模块用于配置网络测速参数
-
-[Panel]
-SpeedTest = script-name=SpeedTest
+#!arguments=DOWNLOAD_URL:https://speed.cloudflare.com/__down?bytes=100000000,UPLOAD_URL:https://speed.cloudflare.com/__up,DOWNLOAD_CONCURRENCY:4,UPLOAD_CONCURRENCY:4,DOWNLOAD_DURATION:10,UPLOAD_DURATION:10,UPLOAD_SIZE:1073741824
+#!arguments-desc=DOWNLOAD_URL: 下载测速URL\nUPLOAD_URL: 上传测速URL\nDOWNLOAD_CONCURRENCY: 下载并发数(1-8)\nUPLOAD_CONCURRENCY: 上传并发数(1-8)\nDOWNLOAD_DURATION: 下载时长限制(秒)\nUPLOAD_DURATION: 上传时长限制(秒)\nUPLOAD_SIZE: 上传大小限制(字节)
 
 [Testing]
-# 下载测速 URL
-download-url = https://speed.cloudflare.com/__down?bytes=100000000
-
-# 上传测速 URL  
-upload-url = https://speed.cloudflare.com/__up
-
-# 代理模式下的下载 URL（未提供时使用 download-url）
-download-url-proxy = 
-
-# 代理模式下的上传 URL（未提供时使用 upload-url）
-upload-url-proxy = 
-
-# 下载并发连接数（默认为 4）
-download-concurrency = 4
-
-# 上传并发连接数（默认为 4）
-upload-concurrency = 4
-
-# 下载测试时长限制（默认为 10 秒）
-download-duration-limit = 10
-
-# 上传数据大小限制（默认为 1GB）
-upload-size-limit = 1073741824
-
-# 上传测试时长限制（默认为 10 秒）
-upload-duration-limit = 10
+download-url = {{{DOWNLOAD_URL}}}
+upload-url = {{{UPLOAD_URL}}}
+download-concurrency = {{{DOWNLOAD_CONCURRENCY}}}
+upload-concurrency = {{{UPLOAD_CONCURRENCY}}}
+download-duration-limit = {{{DOWNLOAD_DURATION}}}
+upload-duration-limit = {{{UPLOAD_DURATION}}}
+upload-size-limit = {{{UPLOAD_SIZE}}}
