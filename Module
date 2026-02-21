@@ -1,0 +1,37 @@
+#!name=Network Speed Test
+#!desc=网络测速配置模块 - 可自定义下载/上传测试参数
+#!system=ios
+
+[Script]
+# 此模块用于配置网络测速参数
+
+[Panel]
+SpeedTest = script-name=SpeedTest
+
+[Testing]
+# 下载测速 URL
+download-url = https://speed.cloudflare.com/__down?bytes=100000000
+
+# 上传测速 URL  
+upload-url = https://speed.cloudflare.com/__up
+
+# 代理模式下的下载 URL（未提供时使用 download-url）
+download-url-proxy = 
+
+# 代理模式下的上传 URL（未提供时使用 upload-url）
+upload-url-proxy = 
+
+# 下载并发连接数（默认为 4）
+download-concurrency = 4
+
+# 上传并发连接数（默认为 4）
+upload-concurrency = 4
+
+# 下载测试时长限制（默认为 10 秒）
+download-duration-limit = 10
+
+# 上传数据大小限制（默认为 1GB）
+upload-size-limit = 1073741824
+
+# 上传测试时长限制（默认为 10 秒）
+upload-duration-limit = 10
