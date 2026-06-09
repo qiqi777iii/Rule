@@ -1,18 +1,38 @@
 # NAME: Sex Japan
 # AUTHOR: QiQi
-# 日本成人站点（JAV 资讯 / 在线播放 / CDN）
 
-# 精确域名
-DOMAIN,hohoj.tv
+# JavLibrary
+DOMAIN-SUFFIX,javlibrary.com
+DOMAIN-SUFFIX,dmm.co.jp
 
-# 资讯与索引
+# MissAV
+DOMAIN-SUFFIX,missav.ai
+DOMAIN-SUFFIX,missav.live
+DOMAIN-SUFFIX,doppiocdn.com
+DOMAIN-SUFFIX,fourhoi.com
+DOMAIN-SUFFIX,growcdnssedge.com
+DOMAIN-SUFFIX,recombee.com
+
+# JavDB
+DOMAIN-SUFFIX,javdb.com
+DOMAIN-SUFFIX,javdb573.com
+DOMAIN-SUFFIX,jav.app
+DOMAIN-SUFFIX,jdbstatic.com
+
+# JavBus
 DOMAIN-SUFFIX,javbus.com
+DOMAIN-SUFFIX,javbus22.com
+DOMAIN-SUFFIX,busjav.bond
+DOMAIN-SUFFIX,busjav.cyou
+DOMAIN-SUFFIX,fanbus.cyou
+DOMAIN-SUFFIX,javbus.hair
+
+# 其他日本成人站点
+DOMAIN,hohoj.tv
 DOMAIN-SUFFIX,javhub.net
 DOMAIN-SUFFIX,avsox.one
 DOMAIN-SUFFIX,onejav.com
 DOMAIN-SUFFIX,freejavbt.com
-
-# 在线播放
 DOMAIN-SUFFIX,jable.tv
 DOMAIN-SUFFIX,javhdporn.net
 DOMAIN-SUFFIX,vjav.com
@@ -21,16 +41,8 @@ DOMAIN-SUFFIX,airav.io
 DOMAIN-SUFFIX,noodlemagazine.com
 DOMAIN-SUFFIX,mat6tube.com
 DOMAIN-SUFFIX,exporntoons.net
-
-# 播放器与 CDN
-DOMAIN-SUFFIX,doppiocdn.com
 DOMAIN-SUFFIX,lilliwelch.com
 DOMAIN-SUFFIX,fivetiu.com
 DOMAIN-SUFFIX,surrit.com
-DOMAIN-SUFFIX,fourhoi.com
-DOMAIN-SUFFIX,cdn.plyr.io
 DOMAIN-SUFFIX,wheelroot.com
-
-# 关键词（范围最广，谨慎添加）
-DOMAIN-KEYWORD,dmm.co.jp
-DOMAIN-KEYWORD,missav
+DOMAIN-SUFFIX,cdn.plyr.io
