@@ -1,7 +1,13 @@
 # NAME: Hentai Animation
 # AUTHOR: qiqi
+# 里番动画站点
 
-DOMAIN-KEYWORD,hentai
+# 精确域名
+DOMAIN,vdownload.hembed.com
+
+# 域名后缀
 DOMAIN-SUFFIX,hanime1.me
 DOMAIN-SUFFIX,loli.net
-DOMAIN,vdownload.hembed.com
+
+# 关键词（范围最广，谨慎添加）
+DOMAIN-KEYWORD,hentai
