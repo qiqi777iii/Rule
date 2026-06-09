@@ -1,0 +1,26 @@
+# NAME: Mail
+# AUTHOR: qiqi
+# 邮件服务规则（Gmail / Outlook / Office365 / Yahoo / Yandex）
+
+# Gmail
+DOMAIN,imap.gmail.com
+DOMAIN,pop.gmail.com
+DOMAIN,smtp.gmail.com
+
+# Outlook / Office365
+DOMAIN,imap-mail.outlook.com
+DOMAIN,smtp-mail.outlook.com
+DOMAIN,outlook.office365.com
+DOMAIN,smtp.office365.com
+DOMAIN-SUFFIX,m.hotmail.com
+
+# Yahoo Mail
+DOMAIN,apple.imap.mail.yahoo.com
+DOMAIN,apple.smtp.mail.yahoo.com
+DOMAIN,mail.yahoo.com
+DOMAIN,data.mail.yahoo.com
+DOMAIN-SUFFIX,yahoo.com
+
+# Yandex
+DOMAIN-SUFFIX,imap.yandex.com
+DOMAIN-SUFFIX,smtp.yandex.com
