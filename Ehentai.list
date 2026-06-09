@@ -1,6 +1,8 @@
 # NAME: Ehentai
 # AUTHOR: qiqi
+# E-Hentai / ExHentai 及其图床
 
-DOMAIN-SUFFIX,exhentai.org
+# 域名后缀
 DOMAIN-SUFFIX,e-hentai.org
+DOMAIN-SUFFIX,exhentai.org
 DOMAIN-SUFFIX,ehgt.org
