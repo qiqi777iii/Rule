@@ -1,12 +1,18 @@
 # NAME: Sex Anime
 # AUTHOR: qiqi
+# 动画成人内容（Rule34 / Hentai 视频站）
 
+# 精确域名
 DOMAIN,ohentai.org
+
+# 域名后缀
 DOMAIN-SUFFIX,rule34.xxx
 DOMAIN-SUFFIX,rule34.paheal.net
 DOMAIN-SUFFIX,porcore.com
 DOMAIN-SUFFIX,hentaicity.com
 DOMAIN-SUFFIX,hembed.com
 DOMAIN-SUFFIX,naughtymachinima.com
+
+# 关键词（范围最广，谨慎添加）
 DOMAIN-KEYWORD,rule34video
 DOMAIN-KEYWORD,prem.boomio
