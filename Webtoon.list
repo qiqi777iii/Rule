@@ -1,6 +1,11 @@
-DOMAIN-SUFFIX,webtoons.com,WEBTOON
-DOMAIN, www.webtoons.com,WEBTOON
-DOMAIN,gak.webtoons.com,WEBTOON
-DOMAIN-SUFFIX,webtoon-phinf.pstatic.net,WEBTOON
-DOMAIN-SUFFIX,webtoons-static.pstatic.net,WEBTOON
-DOMAIN,lcs.loginfra.com,WEBTOON
+# NAME: Webtoon
+# AUTHOR: qiqi
+# WEBTOON 漫画（已移除行内策略名，规则集文件不应包含策略）
+
+# 精确域名
+DOMAIN,lcs.loginfra.com
+
+# 域名后缀（webtoons.com 已覆盖 www/gak 等子域）
+DOMAIN-SUFFIX,webtoons.com
+DOMAIN-SUFFIX,webtoon-phinf.pstatic.net
+DOMAIN-SUFFIX,webtoons-static.pstatic.net
