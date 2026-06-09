@@ -3,9 +3,7 @@
 # 邮件服务规则（Gmail / Outlook / Office365 / Yahoo / Yandex）
 
 # Gmail
-DOMAIN,imap.gmail.com
-DOMAIN,pop.gmail.com
-DOMAIN,smtp.gmail.com
+DOMAIN-KEYWORD,disroot.org
 
 # Outlook / Office365
 DOMAIN,imap-mail.outlook.com
