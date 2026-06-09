@@ -4,15 +4,12 @@
 # Rule34Video
 DOMAIN-SUFFIX,rule34video.com
 DOMAIN-SUFFIX,boomio-cdn.com
-DOMAIN-SUFFIX,eunow4u.com
-DOMAIN-SUFFIX,tsyndicate.com
 
 # Hanime1
 DOMAIN-SUFFIX,hanime1.me
 DOMAIN-SUFFIX,hembed.com
 DOMAIN-SUFFIX,loli.net
 DOMAIN-SUFFIX,sharethis.com
-DOMAIN-SUFFIX,bluetrafficstream.com
 
 # Ohentai
 DOMAIN-SUFFIX,ohentai.org
@@ -20,7 +17,3 @@ DOMAIN-SUFFIX,jwplayer.com
 DOMAIN-SUFFIX,jwpcdn.com
 DOMAIN-SUFFIX,trialhd.com
 DOMAIN-SUFFIX,applzr.com
-
-# 共用广告联盟
-DOMAIN-SUFFIX,juicyads.com
-DOMAIN-SUFFIX,jads.co
