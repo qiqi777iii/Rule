@@ -1,0 +1,21 @@
+# NAME: Doujin
+# AUTHOR: QiQi
+
+# 哔咔
+DOMAIN-SUFFIX,picacomic.com
+
+# 禁漫天堂
+DOMAIN-SUFFIX,18comic.vip
+DOMAIN-SUFFIX,18comic.ink
+DOMAIN-SUFFIX,jmcomic.me
+DOMAIN-SUFFIX,jmapinodeudzn.com
+DOMAIN-KEYWORD,jmapiproxy
+DOMAIN-KEYWORD,jmdanjonproxy
+
+# 其他漫画站
+DOMAIN-SUFFIX,nhentai.net
+DOMAIN-SUFFIX,wnacg.com
+DOMAIN-SUFFIX,h-comic.org
+DOMAIN-SUFFIX,hitomi.la
+DOMAIN-SUFFIX,simply-hentai.com
+DOMAIN-SUFFIX,sh-cdn.com
