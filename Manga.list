@@ -1,0 +1,41 @@
+# NAME: Manga
+# AUTHOR: QiQi
+
+# 拷贝漫画
+DOMAIN-SUFFIX,mangacopy.com
+DOMAIN-SUFFIX,2026copy.com
+DOMAIN-SUFFIX,copy2026.com
+
+# 包子漫画
+DOMAIN-SUFFIX,baozimh.com
+DOMAIN-SUFFIX,baozimh.org
+
+# GoDa 漫画
+DOMAIN-SUFFIX,godamh.com
+DOMAIN-KEYWORD,g-mh.online
+DOMAIN-KEYWORD,goda
+
+# 漫画柜
+DOMAIN-SUFFIX,mhgui.com
+DOMAIN-SUFFIX,manhuagui.com
+
+# 其他漫画站
+DOMAIN-SUFFIX,mangafunb.fun
+DOMAIN-SUFFIX,vomicer.com
+DOMAIN-SUFFIX,vomicmh.com
+DOMAIN-SUFFIX,komiic.com
+DOMAIN-SUFFIX,zerobywai.com
+DOMAIN-SUFFIX,bilimanga.net
+DOMAIN-SUFFIX,8comic.com
+DOMAIN-SUFFIX,cattoon18.com
+DOMAIN-SUFFIX,dm5.com
+DOMAIN-SUFFIX,mangadex.org
+
+# 关键词（范围最广，谨慎添加）
+DOMAIN-KEYWORD,zeroby
+DOMAIN-KEYWORD,roum
+DOMAIN-KEYWORD,happymh
+DOMAIN-KEYWORD,hotmanga
+DOMAIN-KEYWORD,relamanhua
+DOMAIN-KEYWORD,2024manga
+DOMAIN-KEYWORD,manga2024
