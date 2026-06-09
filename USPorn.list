@@ -1,20 +1,26 @@
 # NAME: Sex United States
 # AUTHOR: qiqi
+# 欧美成人站点
 
+# 主站
+DOMAIN-SUFFIX,pornhub.com
 DOMAIN-SUFFIX,xvideos.com
 DOMAIN-SUFFIX,xvv1deos.com
-DOMAIN-SUFFIX,pornhub.com
-DOMAIN-SUFFIX,phncdn.com
-DOMAIN-SUFFIX,eporner.com
-DOMAIN-SUFFIX,spankbang.com
 DOMAIN-SUFFIX,xhamster.com
-DOMAIN-SUFFIX,fullporner.com
+DOMAIN-SUFFIX,spankbang.com
+DOMAIN-SUFFIX,eporner.com
 DOMAIN-SUFFIX,redtube.com
+DOMAIN-SUFFIX,fullporner.com
 DOMAIN-SUFFIX,ixxx.com
 DOMAIN-SUFFIX,porn00.org
-DOMAIN-SUFFIX,sb-cd.com
 DOMAIN-SUFFIX,pmvhaven.com
 DOMAIN-SUFFIX,qosvideos.com
 DOMAIN-SUFFIX,katitube.com
-DOMAIN-KEYWORD,tranny
+
+# CDN
+DOMAIN-SUFFIX,phncdn.com
+DOMAIN-SUFFIX,sb-cd.com
+
+# 关键词（范围最广，谨慎添加）
 DOMAIN-KEYWORD,xvideos
+DOMAIN-KEYWORD,tranny
