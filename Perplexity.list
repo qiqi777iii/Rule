@@ -1,8 +1,10 @@
 # NAME: Perplexity
 # AUTHOR: qiqi
+# Perplexity AI 搜索
 
-DOMAIN,www.perplexity.ai
-DOMAIN,pplx.ai
+# 精确域名
 DOMAIN,hcfy.ai
+
+# 域名后缀（已覆盖 www.perplexity.ai / pplx.ai 等子域）
 DOMAIN-SUFFIX,perplexity.ai
 DOMAIN-SUFFIX,pplx.ai
