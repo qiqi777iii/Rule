@@ -1,16 +1,22 @@
 # NAME: Hentai Comic
 # AUTHOR: qiqi
+# 成人漫画站点（哔咔 / 禁漫 / nhentai 等）
 
+# 哔咔
 DOMAIN-SUFFIX,picacomic.com
+
+# 禁漫天堂
 DOMAIN-SUFFIX,18comic.vip
 DOMAIN-SUFFIX,18comic.ink
+DOMAIN-SUFFIX,jmcomic.me
+DOMAIN-SUFFIX,jmapinodeudzn.com
 DOMAIN-KEYWORD,jmapiproxy
 DOMAIN-KEYWORD,jmdanjonproxy
-DOMAIN-SUFFIX,jmcomic.me
+
+# 其他漫画站
 DOMAIN-SUFFIX,nhentai.net
 DOMAIN-SUFFIX,wnacg.com
 DOMAIN-SUFFIX,h-comic.org
-DOMAIN-SUFFIX,jmapinodeudzn.com
 DOMAIN-SUFFIX,hitomi.la
 DOMAIN-SUFFIX,simply-hentai.com
 DOMAIN-SUFFIX,sh-cdn.com
