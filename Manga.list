@@ -3,39 +3,74 @@
 
 # 拷贝漫画
 DOMAIN-SUFFIX,mangacopy.com
+DOMAIN-SUFFIX,copy20.com
+DOMAIN-SUFFIX,2025copy.com
 DOMAIN-SUFFIX,2026copy.com
 DOMAIN-SUFFIX,copy2026.com
+DOMAIN-SUFFIX,copy2000.site
+DOMAIN-SUFFIX,copymanga.site
 
 # 包子漫画
 DOMAIN-SUFFIX,baozimh.com
 DOMAIN-SUFFIX,baozimh.org
+DOMAIN-SUFFIX,baozimhcn.com
 
 # GoDa 漫画
 DOMAIN-SUFFIX,godamh.com
+DOMAIN-SUFFIX,18mh.org
+DOMAIN-SUFFIX,acgtop.net
+DOMAIN-SUFFIX,manhuascans.org
+DOMAIN-SUFFIX,mangabuddy.in
 DOMAIN-KEYWORD,g-mh.online
 DOMAIN-KEYWORD,goda
 
 # 漫画柜
-DOMAIN-SUFFIX,mhgui.com
 DOMAIN-SUFFIX,manhuagui.com
+DOMAIN-SUFFIX,mhgui.com
 
-# 其他漫画站
+# 热辣 / relamanhua
+DOMAIN-SUFFIX,relamanhua.com
+DOMAIN-SUFFIX,mangafuna.site
 DOMAIN-SUFFIX,mangafunb.fun
-DOMAIN-SUFFIX,vomicer.com
-DOMAIN-SUFFIX,vomicmh.com
-DOMAIN-SUFFIX,komiic.com
-DOMAIN-SUFFIX,zerobywai.com
-DOMAIN-SUFFIX,bilimanga.net
-DOMAIN-SUFFIX,8comic.com
-DOMAIN-SUFFIX,cattoon18.com
-DOMAIN-SUFFIX,dm5.com
-DOMAIN-SUFFIX,mangadex.org
+DOMAIN-SUFFIX,xsskc.com
 
-# 关键词（范围最广，谨慎添加）
-DOMAIN-KEYWORD,zeroby
-DOMAIN-KEYWORD,roum
-DOMAIN-KEYWORD,happymh
-DOMAIN-KEYWORD,hotmanga
-DOMAIN-KEYWORD,relamanhua
-DOMAIN-KEYWORD,2024manga
-DOMAIN-KEYWORD,manga2024
+# Komiic
+DOMAIN-SUFFIX,komiic.com
+
+# Happy 漫画
+DOMAIN-SUFFIX,happymh.com
+
+# MangaDex
+DOMAIN-SUFFIX,mangadex.org
+DOMAIN-SUFFIX,mangadex.com
+
+# 哔哩漫画镜像
+DOMAIN-SUFFIX,bilimanga.net
+DOMAIN-SUFFIX,bilicomic.net
+DOMAIN-SUFFIX,bilinovel.com
+
+# 喵趣漫画
+DOMAIN-SUFFIX,miaoqumh.org
+
+# 8Comic / ComicABC
+DOMAIN-SUFFIX,8comic.com
+DOMAIN-SUFFIX,8book.com
+DOMAIN-SUFFIX,8novel.com
+DOMAIN-SUFFIX,comicabc.com
+DOMAIN-SUFFIX,mybook101.com
+
+# ZeroByWai
+DOMAIN-SUFFIX,zerobywai.com
+
+# Vomic
+DOMAIN-SUFFIX,vomicmh.com
+DOMAIN-SUFFIX,vomic.com
+DOMAIN-SUFFIX,vomicer.com
+
+# 在漫画
+DOMAIN-SUFFIX,zaimanhua.com
+DOMAIN-SUFFIX,mangabus.com
+
+# 其他漫画资源
+DOMAIN-SUFFIX,ttkan.co
+DOMAIN-SUFFIX,xgcartoon.com
