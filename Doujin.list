@@ -8,14 +8,45 @@ DOMAIN-SUFFIX,picacomic.com
 DOMAIN-SUFFIX,18comic.vip
 DOMAIN-SUFFIX,18comic.ink
 DOMAIN-SUFFIX,jmcomic.me
+DOMAIN-SUFFIX,jm-88.cc
+DOMAIN-SUFFIX,j7bnm.top
+DOMAIN-SUFFIX,jmcomic-zzz.one
 DOMAIN-SUFFIX,jmapinodeudzn.com
+DOMAIN-SUFFIX,gcomicloveu.org
 DOMAIN-KEYWORD,jmapiproxy
 DOMAIN-KEYWORD,jmdanjonproxy
 
-# 其他漫画站
+# Rouman / 肉漫
+DOMAIN-SUFFIX,roum27.xyz
+DOMAIN-SUFFIX,rouman5.org
+DOMAIN-SUFFIX,rou.pub
+DOMAIN-SUFFIX,rou.video
+
+# Cartoon18
+DOMAIN-SUFFIX,cartoon18.com
+DOMAIN-SUFFIX,cartoon18.org
+DOMAIN-SUFFIX,luoxiubbs89.com
+
+# 热辣成人漫画
+DOMAIN-SUFFIX,hotmangasd.com
+DOMAIN-SUFFIX,hotmangasf.com
+DOMAIN-SUFFIX,hotmangasg.com
+DOMAIN-SUFFIX,manga2025.com
+DOMAIN-SUFFIX,elfgjfghkk.club
+DOMAIN-SUFFIX,fgjfghkk.club
+
+# nHentai
 DOMAIN-SUFFIX,nhentai.net
+
+# 绅士漫画 / Wnacg
 DOMAIN-SUFFIX,wnacg.com
+
+# H-Comic
 DOMAIN-SUFFIX,h-comic.org
+
+# Hitomi
 DOMAIN-SUFFIX,hitomi.la
+
+# Simply Hentai
 DOMAIN-SUFFIX,simply-hentai.com
 DOMAIN-SUFFIX,sh-cdn.com
