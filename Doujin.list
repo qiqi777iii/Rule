@@ -53,3 +53,10 @@ DOMAIN-SUFFIX,hath.network
 # Simply Hentai
 DOMAIN-SUFFIX,simply-hentai.com
 DOMAIN-SUFFIX,sh-cdn.com
+
+# Ohentai
+DOMAIN-SUFFIX,ohentai.org
+DOMAIN-SUFFIX,b-cdn.net
+DOMAIN-SUFFIX,jwpcdn.com
+DOMAIN-SUFFIX,jwplayer.com
+DOMAIN-SUFFIX,fontawesome.com
