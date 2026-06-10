@@ -47,6 +47,9 @@ DOMAIN-SUFFIX,h-comic.org
 # Hitomi
 DOMAIN-SUFFIX,hitomi.la
 
+# H@H / E-Hentai image CDN
+DOMAIN-SUFFIX,hath.network
+
 # Simply Hentai
 DOMAIN-SUFFIX,simply-hentai.com
 DOMAIN-SUFFIX,sh-cdn.com
