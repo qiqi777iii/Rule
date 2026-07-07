@@ -1,9 +1,9 @@
 # NAME: Mail
 # AUTHOR: QiQi
-# 邮件服务规则（Gmail / Outlook / Office365 / Yahoo / AOL / Yandex）
+# 邮件服务规则（Disroot / Outlook / Office365 / Yahoo / AOL / Proton Mail / Yandex）
 
-# Gmail
-DOMAIN-KEYWORD,disroot.org
+# Disroot
+DOMAIN-SUFFIX,disroot.org
 
 # Outlook / Office365
 DOMAIN,imap-mail.outlook.com
@@ -17,6 +17,12 @@ DOMAIN-SUFFIX,yahoo.com
 
 # AOL Mail
 DOMAIN-SUFFIX,aol.com
+
+# Proton Mail
+DOMAIN-SUFFIX,proton.me
+DOMAIN-SUFFIX,protonmail.com
+DOMAIN-SUFFIX,protonmail.ch
+DOMAIN-SUFFIX,pm.me
 
 # Yandex
 DOMAIN-SUFFIX,imap.yandex.com
