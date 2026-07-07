@@ -1,6 +1,6 @@
 # NAME: Mail
 # AUTHOR: QiQi
-# 邮件服务规则（Gmail / Outlook / Office365 / Yahoo / Yandex）
+# 邮件服务规则（Gmail / Outlook / Office365 / Yahoo / AOL / Yandex）
 
 # Gmail
 DOMAIN-KEYWORD,disroot.org
@@ -14,6 +14,9 @@ DOMAIN-SUFFIX,m.hotmail.com
 
 # Yahoo Mail
 DOMAIN-SUFFIX,yahoo.com
+
+# AOL Mail
+DOMAIN-SUFFIX,aol.com
 
 # Yandex
 DOMAIN-SUFFIX,imap.yandex.com
