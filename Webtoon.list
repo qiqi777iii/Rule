@@ -1,8 +1,7 @@
 # NAME: Webtoon
 # AUTHOR: QiQi
-# WEBTOON 漫画（已移除行内策略名，规则集文件不应包含策略）
+# UPDATED: 2026-07-09
 
-# 精确域名
 DOMAIN,lcs.loginfra.com
 
 # 域名后缀（webtoons.com 已覆盖 www/gak 等子域）
