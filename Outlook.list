@@ -1,6 +1,6 @@
 # NAME: Outlook
 # AUTHOR: QiQi
-# Outlook / Office365
+# UPDATED: 2026-07-09
 
 DOMAIN,imap-mail.outlook.com
 DOMAIN,smtp-mail.outlook.com
