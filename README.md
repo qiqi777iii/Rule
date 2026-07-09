@@ -2,21 +2,33 @@
 
 自用 Surge / Mihomo 分流规则。
 
-## Rule Files
+## Mail
 
-- AnimeAdult: https://raw.githubusercontent.com/qiqi777iii/Surge-Rule/main/AnimeAdult.list
+- Yahoo: https://raw.githubusercontent.com/qiqi777iii/Surge-Rule/main/Yahoo.list
 - AOL: https://raw.githubusercontent.com/qiqi777iii/Surge-Rule/main/AOL.list
-- DEBank: https://raw.githubusercontent.com/qiqi777iii/Surge-Rule/main/DEBank.list
+- Outlook: https://raw.githubusercontent.com/qiqi777iii/Surge-Rule/main/Outlook.list
 - Disroot: https://raw.githubusercontent.com/qiqi777iii/Surge-Rule/main/Disroot.list
+- Proton: https://raw.githubusercontent.com/qiqi777iii/Surge-Rule/main/Proton.list
+
+## Bank
+
+- N26: https://raw.githubusercontent.com/qiqi777iii/Surge-Rule/main/N26.list
+- UKBank: https://raw.githubusercontent.com/qiqi777iii/Surge-Rule/main/UKBank.list
+- DEBank: https://raw.githubusercontent.com/qiqi777iii/Surge-Rule/main/DEBank.list
+- USBank: https://raw.githubusercontent.com/qiqi777iii/Surge-Rule/main/USBank.list
+
+## Adult
+
+- JAV: https://raw.githubusercontent.com/qiqi777iii/Surge-Rule/main/JAV.list
+- ForeignAdult: https://raw.githubusercontent.com/qiqi777iii/Surge-Rule/main/ForeignAdult.list
+- AnimeAdult: https://raw.githubusercontent.com/qiqi777iii/Surge-Rule/main/AnimeAdult.list
+
+## Comic
+
+- Manga: https://raw.githubusercontent.com/qiqi777iii/Surge-Rule/main/Manga.list
 - Doujin: https://raw.githubusercontent.com/qiqi777iii/Surge-Rule/main/Doujin.list
 - EHentai: https://raw.githubusercontent.com/qiqi777iii/Surge-Rule/main/EHentai.list
-- ForeignAdult: https://raw.githubusercontent.com/qiqi777iii/Surge-Rule/main/ForeignAdult.list
-- JAV: https://raw.githubusercontent.com/qiqi777iii/Surge-Rule/main/JAV.list
-- Manga: https://raw.githubusercontent.com/qiqi777iii/Surge-Rule/main/Manga.list
-- N26: https://raw.githubusercontent.com/qiqi777iii/Surge-Rule/main/N26.list
-- Outlook: https://raw.githubusercontent.com/qiqi777iii/Surge-Rule/main/Outlook.list
-- Proton: https://raw.githubusercontent.com/qiqi777iii/Surge-Rule/main/Proton.list
-- UKBank: https://raw.githubusercontent.com/qiqi777iii/Surge-Rule/main/UKBank.list
-- USBank: https://raw.githubusercontent.com/qiqi777iii/Surge-Rule/main/USBank.list
+
+## App
+
 - Webtoon: https://raw.githubusercontent.com/qiqi777iii/Surge-Rule/main/Webtoon.list
-- Yahoo: https://raw.githubusercontent.com/qiqi777iii/Surge-Rule/main/Yahoo.list
