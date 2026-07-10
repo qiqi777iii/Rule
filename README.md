@@ -13,7 +13,7 @@
 ## Bank
 
 - N26: https://raw.githubusercontent.com/qiqi777iii/Surge-Rule/main/N26.list
-- UKBank: https://raw.githubusercontent.com/qiqi777iii/Surge-Rule/main/UKBank.list
+- UKBank（英国 IP 金融/加密应用）: https://raw.githubusercontent.com/qiqi777iii/Surge-Rule/main/UKBank.list
 - DEBank（德国 IP 金融应用）: https://raw.githubusercontent.com/qiqi777iii/Surge-Rule/main/DEBank.list
 - USBank: https://raw.githubusercontent.com/qiqi777iii/Surge-Rule/main/USBank.list
 
