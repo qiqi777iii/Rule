@@ -15,7 +15,7 @@
 - N26: https://raw.githubusercontent.com/qiqi777iii/Surge-Rule/main/N26.list
 - UKApps（英国 IP 应用）: https://raw.githubusercontent.com/qiqi777iii/Surge-Rule/main/UKApps.list
 - DEApps（德国 IP 应用）: https://raw.githubusercontent.com/qiqi777iii/Surge-Rule/main/DEApps.list
-- USBank: https://raw.githubusercontent.com/qiqi777iii/Surge-Rule/main/USBank.list
+- USApps（美国 IP 应用）: https://raw.githubusercontent.com/qiqi777iii/Surge-Rule/main/USApps.list
 
 ## Adult
 
