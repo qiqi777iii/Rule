@@ -5,10 +5,8 @@
 ## Mail
 
 - Yahoo: https://raw.githubusercontent.com/qiqi777iii/Surge-Rule/main/Yahoo.list
-- AOL: https://raw.githubusercontent.com/qiqi777iii/Surge-Rule/main/AOL.list
 - Outlook: https://raw.githubusercontent.com/qiqi777iii/Surge-Rule/main/Outlook.list
 - Disroot: https://raw.githubusercontent.com/qiqi777iii/Surge-Rule/main/Disroot.list
-- Proton: https://raw.githubusercontent.com/qiqi777iii/Surge-Rule/main/Proton.list
 
 ## Bank
 
