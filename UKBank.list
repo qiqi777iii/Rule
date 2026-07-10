@@ -32,9 +32,6 @@ DOMAIN-SUFFIX,lloydsbank.co.uk
 DOMAIN-SUFFIX,lloydsbank.com
 DOMAIN-SUFFIX,lloydsbankinggroup.com
 
-# Money Dashboard
-DOMAIN-SUFFIX,dashboard.co.uk
-DOMAIN-SUFFIX,moneydashboard.com
 
 # Monzo
 DOMAIN,mondo-image-uploads.s3.amazonaws.com
