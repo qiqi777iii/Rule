@@ -1,6 +1,6 @@
 # Rule
 
-自用 Surge / Mihomo 分流规则。
+自用分流规则。
 
 ## Mail
 
