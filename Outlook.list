@@ -1,9 +1,8 @@
 # NAME: Outlook
 # AUTHOR: QiQi
-# UPDATED: 2026-07-09
+# UPDATED: 2026-07-10
 
-DOMAIN,imap-mail.outlook.com
-DOMAIN,smtp-mail.outlook.com
+DOMAIN-SUFFIX,outlook.com
+DOMAIN-SUFFIX,hotmail.com
 DOMAIN,outlook.office365.com
 DOMAIN,smtp.office365.com
-DOMAIN-SUFFIX,m.hotmail.com
