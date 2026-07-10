@@ -1,16 +1,43 @@
 # NAME: N26
 # AUTHOR: QiQi
-# UPDATED: 2026-07-09
+# UPDATED: 2026-07-10
 
-DOMAIN-KEYWORD,n26
-DOMAIN-KEYWORD,26.de
-DOMAIN-KEYWORD,tech26.de
-DOMAIN-KEYWORD,lo.msghist.liveperson.net
-DOMAIN-KEYWORD,lo.idp.liveperson.net
-DOMAIN-KEYWORD,lo.msg.liveperson.net
-DOMAIN-KEYWORD,accdn.lpsnmedia.net
-DOMAIN-KEYWORD,lo.push.liveperson.net
-DOMAIN-KEYWORD,lpcdn.lpsnmedia.net
-DOMAIN-KEYWORD,notify.bugsnag.com
-DOMAIN-KEYWORD,lo.v.liveperson.net
-DOMAIN-KEYWORD,aggregator.service.usercentrics.eu
+# Core
+DOMAIN-SUFFIX,n26.com
+DOMAIN-SUFFIX,number26.de
+DOMAIN-SUFFIX,tech26.de
+
+# Customer support
+DOMAIN-SUFFIX,liveperson.net
+DOMAIN-SUFFIX,lpsnmedia.net
+
+# Consent, content, and in-app configuration
+DOMAIN-SUFFIX,usercentrics.eu
+DOMAIN-SUFFIX,braze.eu
+DOMAIN-SUFFIX,ctfassets.net
+DOMAIN,n26-privacy.my.onetrust.com
+DOMAIN,geolocation.onetrust.com
+
+# Diagnostics, analytics, and remote configuration
+DOMAIN-SUFFIX,bugsnag.com
+DOMAIN-SUFFIX,adjust.com
+DOMAIN-SUFFIX,adjust.io
+DOMAIN-SUFFIX,adjust.net.in
+DOMAIN-SUFFIX,beyondwickedmapping.org
+DOMAIN-SUFFIX,featureassets.org
+DOMAIN-SUFFIX,prodregistryv2.org
+DOMAIN-SUFFIX,assetsconfigcdn.org
+
+# N26-specific assets and services
+DOMAIN,n26-admedia.s3.eu-central-1.amazonaws.com
+DOMAIN,n26.imgix.net
+DOMAIN,n26.my.site.com
+DOMAIN,mcgthfrqrs95vdbzkhtchf5fc0g4.device.marketingcloudapis.com
+
+# Identity verification and account switching
+DOMAIN-SUFFIX,idnow.de
+DOMAIN,n26.kontenwechsel.de
+DOMAIN,m-n26.kontenwechsel.de
+
+# 3D Secure
+DOMAIN-SUFFIX,cardinalcommerce.com
