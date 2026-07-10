@@ -1,22 +1,98 @@
 # NAME: UKBank
 # AUTHOR: QiQi
-# UPDATED: 2026-07-09
+# UPDATED: 2026-07-10
 
-DOMAIN-SUFFIX,cms.creditkarma.co.uk
+# Altery
+DOMAIN-SUFFIX,altery.com
+
+# COCA
+DOMAIN-SUFFIX,coca.xyz
+
+# Credit Karma
+DOMAIN-SUFFIX,creditkarma.co.uk
+DOMAIN-SUFFIX,creditkarma.com
+
+# Curve
+DOMAIN-SUFFIX,curve.app
+DOMAIN-SUFFIX,curve.com
+
+# Giffgaff
+DOMAIN-SUFFIX,giffgaff.com
+
+# Kingdom Bank
+DOMAIN-SUFFIX,thekingdombank.com
+
+# Krak
+DOMAIN-SUFFIX,krak.app
+DOMAIN-SUFFIX,kraken.com
+
+# Lloyds
+DOMAIN-SUFFIX,lloydsbank.co.uk
+DOMAIN-SUFFIX,lloydsbank.com
+DOMAIN-SUFFIX,lloydsbankinggroup.com
+
+# Money Dashboard
 DOMAIN-SUFFIX,dashboard.co.uk
-DOMAIN-KEYWORD,online-metrix
-DOMAIN-KEYWORD,neteller
-DOMAIN-KEYWORD,monzo
-DOMAIN-KEYWORD,lloyds
-DOMAIN-KEYWORD,zopa
-DOMAIN-KEYWORD,yonder
-DOMAIN-KEYWORD,wise
-DOMAIN-KEYWORD,zilch
-DOMAIN-KEYWORD,altery
-DOMAIN-KEYWORD,krak
-DOMAIN-KEYWORD,upload
-DOMAIN-KEYWORD,wirex
-DOMAIN-KEYWORD,coca
-DOMAIN-KEYWORD,curve
-DOMAIN-KEYWORD,thekingdombank
-DOMAIN-KEYWORD,giffgaff
+
+# Monzo
+DOMAIN,mondo-image-uploads.s3.amazonaws.com
+DOMAIN,monzo-prod-qr-challenge.s3.eu-west-1.amazonaws.com
+DOMAIN,monzo-prod-user-images.imgix.net
+DOMAIN-SUFFIX,monzo-alt.net
+DOMAIN-SUFFIX,monzo-prod.com
+DOMAIN-SUFFIX,monzo-s101.com
+DOMAIN-SUFFIX,monzo.com
+DOMAIN-SUFFIX,monzo.me
+
+# Neteller
+DOMAIN-SUFFIX,neteller.com
+
+# Shared Services
+DOMAIN-SUFFIX,adjust.com
+DOMAIN-SUFFIX,adjust.io
+DOMAIN-SUFFIX,adjust.net.in
+DOMAIN,api.authy.com
+DOMAIN-SUFFIX,appboy.com
+DOMAIN-SUFFIX,appsflyer.com
+DOMAIN-SUFFIX,braze.eu
+DOMAIN-SUFFIX,bugsnag.com
+DOMAIN-SUFFIX,ctfassets.net
+DOMAIN-SUFFIX,hotjar.com
+DOMAIN-SUFFIX,idnow.de
+DOMAIN-SUFFIX,jumio.com
+DOMAIN-SUFFIX,launchdarkly.com
+DOMAIN-SUFFIX,mixpanel.com
+DOMAIN-SUFFIX,onfido.com
+DOMAIN-SUFFIX,onfido.io
+DOMAIN-SUFFIX,online-metrix.net
+DOMAIN-SUFFIX,onetrust.com
+DOMAIN-SUFFIX,sardine.ai
+DOMAIN-SUFFIX,siftscience.com
+DOMAIN-SUFFIX,singular.net
+DOMAIN-SUFFIX,sumsub.com
+DOMAIN-SUFFIX,usercentrics.eu
+DOMAIN-SUFFIX,veriff.com
+
+# Uphold
+DOMAIN-SUFFIX,uphold.com
+DOMAIN-SUFFIX,upholdcdn.com
+
+# Wirex
+DOMAIN-SUFFIX,wirexapp.com
+
+# Wise
+DOMAIN-SUFFIX,transferwise.com
+DOMAIN-SUFFIX,wi.se
+DOMAIN-SUFFIX,wise.com
+
+# Yonder
+DOMAIN-SUFFIX,yonder.com
+DOMAIN-SUFFIX,yondercard.com
+DOMAIN-SUFFIX,yondercdn.com
+
+# Zilch
+DOMAIN-SUFFIX,payzilch.com
+DOMAIN-SUFFIX,zilch.com
+
+# Zopa
+DOMAIN-SUFFIX,zopa.com
