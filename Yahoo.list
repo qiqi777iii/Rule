@@ -1,5 +1,9 @@
 # NAME: Yahoo
 # AUTHOR: QiQi
-# UPDATED: 2026-07-09
+# UPDATED: 2026-07-10
 
 DOMAIN-SUFFIX,yahoo.com
+DOMAIN-SUFFIX,yahoo.net
+DOMAIN-SUFFIX,ymail.com
+DOMAIN-SUFFIX,rocketmail.com
+DOMAIN-SUFFIX,yimg.com
