@@ -79,24 +79,3 @@ DOMAIN-SUFFIX,wirex.app.link
 # COCA
 DOMAIN-SUFFIX,coca.xyz
 DOMAIN-SUFFIX,wwallet.app.link
-
-# Shared Services
-DOMAIN-SUFFIX,auth0.com
-DOMAIN-SUFFIX,auth0usercontent.com
-DOMAIN,api.authy.com
-DOMAIN-SUFFIX,ctfassets.net
-DOMAIN-SUFFIX,idnow.de
-DOMAIN-SUFFIX,jumio.com
-DOMAIN-SUFFIX,launchdarkly.com
-DOMAIN-SUFFIX,onfido.com
-DOMAIN-SUFFIX,onfido.io
-DOMAIN-SUFFIX,online-metrix.net
-DOMAIN-SUFFIX,onetrust.com
-DOMAIN-SUFFIX,plaid.com
-DOMAIN-SUFFIX,sardine.ai
-DOMAIN-SUFFIX,siftscience.com
-DOMAIN-SUFFIX,sumsub.com
-DOMAIN-SUFFIX,truelayer.com
-DOMAIN-SUFFIX,usercentrics.eu
-DOMAIN-SUFFIX,veriff.com
-DOMAIN-SUFFIX,yapily.com
