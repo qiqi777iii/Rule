@@ -6,17 +6,13 @@
 DOMAIN-SUFFIX,bbva.com
 DOMAIN-SUFFIX,bbva.de
 
-# Bonify
-DOMAIN-SUFFIX,bonify.de
-DOMAIN-SUFFIX,schufa.de
+# SumUp
+DOMAIN-SUFFIX,sumup.com
+DOMAIN-SUFFIX,sumup.me
 
 # Skrill
 DOMAIN-SUFFIX,paysafe.com
 DOMAIN-SUFFIX,skrill.com
-
-# SumUp
-DOMAIN-SUFFIX,sumup.com
-DOMAIN-SUFFIX,sumup.me
 
 # Trading 212
 DOMAIN-SUFFIX,chartiq.com
@@ -28,6 +24,10 @@ DOMAIN-SUFFIX,trading212invest.com
 DOMAIN,trading2129704.zendesk.com
 DOMAIN,trading212equities.s3.amazonaws.com
 DOMAIN,trading212equities.s3.eu-central-1.amazonaws.com
+
+# Bonify
+DOMAIN-SUFFIX,bonify.de
+DOMAIN-SUFFIX,schufa.de
 
 # Shared Services
 DOMAIN,01.braze.eu
