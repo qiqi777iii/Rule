@@ -1,6 +1,6 @@
-# NAME: DEApps
+# NAME: APP-DE
 # AUTHOR: QiQi
-# UPDATED: 2026-07-10
+# UPDATED: 2026-08-27
 
 # BBVA
 DOMAIN-SUFFIX,bbva.com
@@ -9,6 +9,7 @@ DOMAIN-SUFFIX,bbva.de
 # SumUp
 DOMAIN-SUFFIX,sumup.com
 DOMAIN-SUFFIX,sumup.me
+DOMAIN-SUFFIX,sumup.onelink.me
 
 # Skrill
 DOMAIN-SUFFIX,paysafe.com
@@ -21,7 +22,6 @@ DOMAIN-SUFFIX,trading212.com
 DOMAIN-SUFFIX,trading212.io
 DOMAIN-SUFFIX,trading212api.com
 DOMAIN-SUFFIX,trading212invest.com
-DOMAIN,trading2129704.zendesk.com
 DOMAIN,trading212equities.s3.amazonaws.com
 DOMAIN,trading212equities.s3.eu-central-1.amazonaws.com
 
@@ -30,16 +30,10 @@ DOMAIN-SUFFIX,bonify.de
 DOMAIN-SUFFIX,schufa.de
 
 # Shared Services
-DOMAIN,01.braze.eu
 DOMAIN,api.onfido.com
 DOMAIN,d14vqntc8kjril.cloudfront.net
 DOMAIN,d1o59w04t0rrym.cloudfront.net
 DOMAIN,edge.api.flagsmith.com
-DOMAIN,eu.mixpanel.com
-DOMAIN,eu1.clevertap-prod.com
 DOMAIN,login.truelayer.com
 DOMAIN,ocsp.r2m01.amazontrust.com
-DOMAIN,otlp.bugsnag.com
-DOMAIN,stats.azmsoft.com
-DOMAIN-SUFFIX,appsflyersdk.com
 DOMAIN-SUFFIX,seondnsresolve.com
