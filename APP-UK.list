@@ -1,0 +1,110 @@
+# NAME: UKApps
+# AUTHOR: QiQi
+# UPDATED: 2026-07-10
+
+# Altery
+DOMAIN-SUFFIX,altery.com
+
+# COCA
+DOMAIN-SUFFIX,coca.xyz
+
+# Credit Karma
+DOMAIN-SUFFIX,creditkarma.co.uk
+DOMAIN-SUFFIX,creditkarma.com
+
+# Curve
+DOMAIN-SUFFIX,curve.app
+DOMAIN-SUFFIX,curve.com
+DOMAIN-SUFFIX,imaginecurve.com
+
+# Giffgaff
+DOMAIN-SUFFIX,giffgaff.com
+
+# Krak
+DOMAIN-SUFFIX,krak.app
+DOMAIN-SUFFIX,kraken.com
+
+# Lloyds
+DOMAIN-SUFFIX,lloydsbank.co.uk
+DOMAIN-SUFFIX,lloydsbank.com
+DOMAIN-SUFFIX,lloydsbankinggroup.com
+
+# Monzo
+DOMAIN,mondo-image-uploads.s3.amazonaws.com
+DOMAIN-SUFFIX,monzo-alt.net
+DOMAIN-SUFFIX,monzo-prod.com
+DOMAIN,monzo-prod-qr-challenge.s3.eu-west-1.amazonaws.com
+DOMAIN,monzo-prod-user-images.imgix.net
+DOMAIN-SUFFIX,monzo-s101.com
+DOMAIN-SUFFIX,monzo.com
+DOMAIN-SUFFIX,monzo.me
+
+# Shared Services
+DOMAIN-SUFFIX,adjust.com
+DOMAIN-SUFFIX,adjust.io
+DOMAIN-SUFFIX,adjust.net.in
+DOMAIN-SUFFIX,appboy.com
+DOMAIN-SUFFIX,appsflyer.com
+DOMAIN-SUFFIX,auth0.com
+DOMAIN-SUFFIX,auth0usercontent.com
+DOMAIN,api.authy.com
+DOMAIN-SUFFIX,braze.eu
+DOMAIN-SUFFIX,bugsnag.com
+DOMAIN-SUFFIX,ctfassets.net
+DOMAIN-SUFFIX,freshchat.com
+DOMAIN-SUFFIX,freshdesk.com
+DOMAIN-SUFFIX,freshworks.com
+DOMAIN-SUFFIX,hotjar.com
+DOMAIN-SUFFIX,idnow.de
+DOMAIN-SUFFIX,intercom.com
+DOMAIN-SUFFIX,intercom.io
+DOMAIN-SUFFIX,intercomassets.com
+DOMAIN-SUFFIX,intercomcdn.com
+DOMAIN-SUFFIX,jumio.com
+DOMAIN-SUFFIX,launchdarkly.com
+DOMAIN-SUFFIX,mixpanel.com
+DOMAIN-SUFFIX,onfido.com
+DOMAIN-SUFFIX,onfido.io
+DOMAIN-SUFFIX,online-metrix.net
+DOMAIN-SUFFIX,onetrust.com
+DOMAIN-SUFFIX,plaid.com
+DOMAIN-SUFFIX,sardine.ai
+DOMAIN-SUFFIX,sentry.io
+DOMAIN-SUFFIX,siftscience.com
+DOMAIN-SUFFIX,singular.net
+DOMAIN-SUFFIX,sumsub.com
+DOMAIN-SUFFIX,truelayer.com
+DOMAIN-SUFFIX,usercentrics.eu
+DOMAIN-SUFFIX,veriff.com
+DOMAIN-SUFFIX,yapily.com
+DOMAIN-SUFFIX,zdassets.com
+DOMAIN-SUFFIX,zendesk.com
+DOMAIN-SUFFIX,zndsk.com
+DOMAIN-SUFFIX,zopim.com
+
+# Uphold
+DOMAIN-SUFFIX,uphold.com
+DOMAIN-SUFFIX,upholdcdn.com
+
+# Wirex
+DOMAIN-SUFFIX,wirexapp.com
+
+# Wise
+DOMAIN-SUFFIX,transferwise.com
+DOMAIN-SUFFIX,wi.se
+DOMAIN-SUFFIX,wise.com
+
+# Yonder
+DOMAIN-SUFFIX,griffin.com
+DOMAIN-SUFFIX,griffin.sh
+DOMAIN-SUFFIX,transactpay.com
+DOMAIN-SUFFIX,yonder.com
+DOMAIN-SUFFIX,yondercard.com
+DOMAIN-SUFFIX,yondercdn.com
+
+# Zilch
+DOMAIN-SUFFIX,payzilch.com
+DOMAIN-SUFFIX,zilch.com
+
+# Zopa
+DOMAIN-SUFFIX,zopa.com
