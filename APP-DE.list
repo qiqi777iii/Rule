@@ -12,7 +12,6 @@ DOMAIN-SUFFIX,sumup.me
 DOMAIN-SUFFIX,sumup.onelink.me
 
 # Skrill
-DOMAIN-SUFFIX,paysafe.com
 DOMAIN-SUFFIX,skrill.com
 
 # Trading 212
@@ -33,7 +32,6 @@ DOMAIN-SUFFIX,schufa.de
 DOMAIN-KEYWORD,bbva
 DOMAIN-KEYWORD,sumup
 DOMAIN-KEYWORD,skrill
-DOMAIN-KEYWORD,paysafe
 DOMAIN-KEYWORD,trading212
 DOMAIN-KEYWORD,bonify
 DOMAIN-KEYWORD,schufa
