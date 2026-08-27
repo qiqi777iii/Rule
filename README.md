@@ -10,7 +10,7 @@
 - Disroot: https://raw.githubusercontent.com/qiqi777iii/Rule/main/Disroot.list
 - Protonmail: https://raw.githubusercontent.com/qiqi777iii/Rule/main/Protonmail.list
 
-## Bank
+## APP
 
 - N26: https://raw.githubusercontent.com/qiqi777iii/Rule/main/N26.list
 - UKApps: https://raw.githubusercontent.com/qiqi777iii/Rule/main/APP-UK.list
