@@ -13,9 +13,9 @@
 ## APP
 
 - N26: https://raw.githubusercontent.com/qiqi777iii/Rule/main/N26.list
-- UKApps: https://raw.githubusercontent.com/qiqi777iii/Rule/main/APP-UK.list
-- DEApps: https://raw.githubusercontent.com/qiqi777iii/Rule/main/App-DE.list
-- USApps: https://raw.githubusercontent.com/qiqi777iii/Rule/main/APP-US.list
+- APP-DE: https://raw.githubusercontent.com/qiqi777iii/Rule/main/App-DE.list
+- APP-UK: https://raw.githubusercontent.com/qiqi777iii/Rule/main/APP-UK.list
+- APP-US: https://raw.githubusercontent.com/qiqi777iii/Rule/main/APP-US.list
 
 ## Adult
 
