@@ -79,3 +79,23 @@ DOMAIN-SUFFIX,wirex.app.link
 # COCA
 DOMAIN-SUFFIX,coca.xyz
 DOMAIN-SUFFIX,wwallet.app.link
+
+# Brand Fallback
+DOMAIN-KEYWORD,monzo
+DOMAIN-KEYWORD,lloydsbank
+DOMAIN-KEYWORD,zopa
+DOMAIN-KEYWORD,payzilch
+DOMAIN-KEYWORD,transferwise
+DOMAIN-KEYWORD,wiseconnect
+DOMAIN-KEYWORD,yondercard
+DOMAIN-KEYWORD,altery
+DOMAIN-KEYWORD,imaginecurve
+DOMAIN-KEYWORD,creditkarma
+DOMAIN-KEYWORD,ckapis
+DOMAIN-KEYWORD,giffgaff
+DOMAIN-KEYWORD,kraken
+DOMAIN-KEYWORD,payward
+DOMAIN-KEYWORD,uphold
+DOMAIN-KEYWORD,topperpay
+DOMAIN-KEYWORD,wirex
+DOMAIN-KEYWORD,wwallet
