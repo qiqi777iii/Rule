@@ -1,33 +1,6 @@
-# NAME: UKApps
+# NAME: APP-UK
 # AUTHOR: QiQi
-# UPDATED: 2026-07-10
-
-# Altery
-DOMAIN-SUFFIX,altery.com
-
-# COCA
-DOMAIN-SUFFIX,coca.xyz
-
-# Credit Karma
-DOMAIN-SUFFIX,creditkarma.co.uk
-DOMAIN-SUFFIX,creditkarma.com
-
-# Curve
-DOMAIN-SUFFIX,curve.app
-DOMAIN-SUFFIX,curve.com
-DOMAIN-SUFFIX,imaginecurve.com
-
-# Giffgaff
-DOMAIN-SUFFIX,giffgaff.com
-
-# Krak
-DOMAIN-SUFFIX,krak.app
-DOMAIN-SUFFIX,kraken.com
-
-# Lloyds
-DOMAIN-SUFFIX,lloydsbank.co.uk
-DOMAIN-SUFFIX,lloydsbank.com
-DOMAIN-SUFFIX,lloydsbankinggroup.com
+# UPDATED: 2026-08-27
 
 # Monzo
 DOMAIN,mondo-image-uploads.s3.amazonaws.com
@@ -38,6 +11,75 @@ DOMAIN,monzo-prod-user-images.imgix.net
 DOMAIN-SUFFIX,monzo-s101.com
 DOMAIN-SUFFIX,monzo.com
 DOMAIN-SUFFIX,monzo.me
+
+# Lloyds
+DOMAIN-SUFFIX,lloydsbank.com
+DOMAIN-SUFFIX,lloydsbank.co.uk
+DOMAIN-SUFFIX,lloydsbankinggroup.com
+DOMAIN-SUFFIX,lloydsbank.onelink.me
+
+# Zopa
+DOMAIN-SUFFIX,zopa.com
+DOMAIN-SUFFIX,zopa.onelink.me
+
+# Zilch
+DOMAIN-SUFFIX,zilch.com
+DOMAIN-SUFFIX,payzilch.com
+DOMAIN-SUFFIX,zilch.onelink.me
+
+# Wise
+DOMAIN-SUFFIX,wise.com
+DOMAIN-SUFFIX,transferwise.com
+DOMAIN-SUFFIX,wiseconnect.io
+DOMAIN-SUFFIX,wise-app.sng.link
+
+# Yonder
+DOMAIN-SUFFIX,yonder.com
+DOMAIN-SUFFIX,yondercard.com
+
+# Altery
+DOMAIN-SUFFIX,altery.com
+DOMAIN-SUFFIX,altery.onelink.me
+
+# Curve
+DOMAIN-SUFFIX,curve.app
+DOMAIN-SUFFIX,curve.com
+DOMAIN-SUFFIX,imaginecurve.com
+
+# Credit Karma
+DOMAIN-SUFFIX,creditkarma.co.uk
+DOMAIN-SUFFIX,creditkarma.com
+DOMAIN-SUFFIX,ckapis.com
+DOMAIN-SUFFIX,intuit.com
+DOMAIN-SUFFIX,creditkarmacdn-a.akamaihd.net
+DOMAIN-SUFFIX,ck-content.imgix.net
+DOMAIN-SUFFIX,intlck.imgix.net
+
+# Giffgaff
+DOMAIN-SUFFIX,giffgaff.com
+
+# Krak
+DOMAIN-SUFFIX,kraken.com
+DOMAIN-SUFFIX,krak.app
+DOMAIN-SUFFIX,payward.com
+DOMAIN-SUFFIX,kraken.app.link
+DOMAIN-SUFFIX,kraken.onelink.me
+
+# Uphold
+DOMAIN-SUFFIX,uphold.com
+DOMAIN-SUFFIX,uphold.website
+DOMAIN-SUFFIX,uphold.onelink.me
+DOMAIN-SUFFIX,topperpay.com
+DOMAIN-SUFFIX,optimus.money
+
+# Wirex
+DOMAIN-SUFFIX,wirexapp.com
+DOMAIN-SUFFIX,wirex.app.link
+
+# COCA
+DOMAIN-SUFFIX,coca.xyz
+DOMAIN-SUFFIX,wirexapp.com
+DOMAIN-SUFFIX,wwallet.app.link
 
 # Shared Services
 DOMAIN-SUFFIX,adjust.com
@@ -81,30 +123,3 @@ DOMAIN-SUFFIX,zdassets.com
 DOMAIN-SUFFIX,zendesk.com
 DOMAIN-SUFFIX,zndsk.com
 DOMAIN-SUFFIX,zopim.com
-
-# Uphold
-DOMAIN-SUFFIX,uphold.com
-DOMAIN-SUFFIX,upholdcdn.com
-
-# Wirex
-DOMAIN-SUFFIX,wirexapp.com
-
-# Wise
-DOMAIN-SUFFIX,transferwise.com
-DOMAIN-SUFFIX,wi.se
-DOMAIN-SUFFIX,wise.com
-
-# Yonder
-DOMAIN-SUFFIX,griffin.com
-DOMAIN-SUFFIX,griffin.sh
-DOMAIN-SUFFIX,transactpay.com
-DOMAIN-SUFFIX,yonder.com
-DOMAIN-SUFFIX,yondercard.com
-DOMAIN-SUFFIX,yondercdn.com
-
-# Zilch
-DOMAIN-SUFFIX,payzilch.com
-DOMAIN-SUFFIX,zilch.com
-
-# Zopa
-DOMAIN-SUFFIX,zopa.com
