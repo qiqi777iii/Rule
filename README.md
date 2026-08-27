@@ -13,7 +13,7 @@
 ## APP
 
 - N26: https://raw.githubusercontent.com/qiqi777iii/Rule/main/N26.list
-- APP-DE: https://raw.githubusercontent.com/qiqi777iii/Rule/main/App-DE.list
+- APP-DE: https://raw.githubusercontent.com/qiqi777iii/Rule/main/APP-DE.list
 - APP-UK: https://raw.githubusercontent.com/qiqi777iii/Rule/main/APP-UK.list
 - APP-US: https://raw.githubusercontent.com/qiqi777iii/Rule/main/APP-US.list
 
