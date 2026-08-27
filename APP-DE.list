@@ -28,3 +28,12 @@ DOMAIN,trading212equities.s3.eu-central-1.amazonaws.com
 # Bonify
 DOMAIN-SUFFIX,bonify.de
 DOMAIN-SUFFIX,schufa.de
+
+# Brand Fallback
+DOMAIN-KEYWORD,bbva
+DOMAIN-KEYWORD,sumup
+DOMAIN-KEYWORD,skrill
+DOMAIN-KEYWORD,paysafe
+DOMAIN-KEYWORD,trading212
+DOMAIN-KEYWORD,bonify
+DOMAIN-KEYWORD,schufa
