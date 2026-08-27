@@ -28,12 +28,3 @@ DOMAIN,trading212equities.s3.eu-central-1.amazonaws.com
 # Bonify
 DOMAIN-SUFFIX,bonify.de
 DOMAIN-SUFFIX,schufa.de
-
-# Shared Services
-DOMAIN,api.onfido.com
-DOMAIN,d14vqntc8kjril.cloudfront.net
-DOMAIN,d1o59w04t0rrym.cloudfront.net
-DOMAIN,edge.api.flagsmith.com
-DOMAIN,login.truelayer.com
-DOMAIN,ocsp.r2m01.amazontrust.com
-DOMAIN-SUFFIX,seondnsresolve.com
