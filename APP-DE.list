@@ -6,6 +6,9 @@
 DOMAIN-SUFFIX,bbva.com
 DOMAIN-SUFFIX,bbva.de
 
+# BlackCat
+DOMAIN-SUFFIX,blackcat.app
+
 # SumUp
 DOMAIN-SUFFIX,sumup.com
 DOMAIN-SUFFIX,sumup.me
